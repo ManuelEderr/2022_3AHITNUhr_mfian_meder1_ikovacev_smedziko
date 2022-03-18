@@ -4,10 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bf76bf08-bf60-4e36-94d0-ca741ce9cdf2" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/2022_3AHITNUhr_mfian_meder1_ikovacev_smedziko.iml" beforeDir="false" afterPath="$PROJECT_DIR$/2022_3AHITNUhr_mfian_meder1_ikovacev_smedziko.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/a2022_3ahitnuhr_mfian_meder1_ikovacev_smedziko/hello-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/a2022_3ahitnuhr_mfian_meder1_ikovacev_smedziko/hello-view.fxml" afterDir="false" />
+    <list default="true" id="bf76bf08-bf60-4e36-94d0-ca741ce9cdf2" name="Changes" comment="hello-view.fxml">
+      <change afterPath="$PROJECT_DIR$/ikovacev_Arbeitsbericht.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/meder1_Arbeitsbericht.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mfian_Arbeitsbericht.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/smedziko_Arbeitsbericht.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -70,11 +71,34 @@
       <option name="presentableId" value="Default" />
       <updated>1647588036565</updated>
       <workItem from="1647588041306" duration="548000" />
-      <workItem from="1647588911689" duration="853000" />
+      <workItem from="1647588911689" duration="1234000" />
     </task>
+    <task id="LOCAL-00001" summary="hello-view.fxml">
+      <created>1647589998025</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1647589998025</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="hello-view.fxml" />
+    <option name="LAST_COMMIT_MESSAGE" value="hello-view.fxml" />
   </component>
 </project>
