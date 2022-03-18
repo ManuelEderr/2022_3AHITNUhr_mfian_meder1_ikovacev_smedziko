@@ -1,5 +1,5 @@
 package View;
 
-public class ShowUhr {
-
+public interface ShowUhr {
+    public void showUhr();
 }
