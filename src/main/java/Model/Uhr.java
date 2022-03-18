@@ -10,8 +10,15 @@ public class Uhr {
     private Timestamp[] Wecker;
     private String Temperatur;
     private String[] bilderFuerWetter;
+    private int degree;
+
+
+    public int getDegree() {
+        return degree;
+    }
 
     public Timestamp getCurrentTime() {
+        setCurrentTime(new Timestamp(System.currentTimeMillis()));
         return CurrentTime;
     }
 
