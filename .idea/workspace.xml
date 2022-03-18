@@ -4,12 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bf76bf08-bf60-4e36-94d0-ca741ce9cdf2" name="Changes" comment="Arbeitsberichte für jedes Teammitglied">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ikovacev_Arbeitsbericht.md" beforeDir="false" afterPath="$PROJECT_DIR$/ikovacev_Arbeitsbericht.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/meder1_Arbeitsbericht.md" beforeDir="false" afterPath="$PROJECT_DIR$/meder1_Arbeitsbericht.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mfian_Arbeitsbericht.md" beforeDir="false" afterPath="$PROJECT_DIR$/mfian_Arbeitsbericht.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/smedziko_Arbeitsbericht.md" beforeDir="false" afterPath="$PROJECT_DIR$/smedziko_Arbeitsbericht.md" afterDir="false" />
+    <list default="true" id="bf76bf08-bf60-4e36-94d0-ca741ce9cdf2" name="Changes" comment="hello-view.fxml, styleButtons.css">
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/a2022_3ahitnuhr_mfian_meder1_ikovacev_smedziko/styleButtons.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/a2022_3ahitnuhr_mfian_meder1_ikovacev_smedziko/styleButtons.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -20,6 +16,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Class" />
+        <option value="CSS File" />
       </list>
     </option>
   </component>
@@ -47,6 +44,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../../../../local_meder1/Temp/openjfx/openjfx-11.0.2_windows-x64_bin-sdk/javafx-sdk-11.0.2/lib" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -80,7 +78,7 @@
       <option name="presentableId" value="Default" />
       <updated>1647588036565</updated>
       <workItem from="1647588041306" duration="548000" />
-      <workItem from="1647588911689" duration="1806000" />
+      <workItem from="1647588911689" duration="2117000" />
     </task>
     <task id="LOCAL-00001" summary="hello-view.fxml">
       <created>1647589998025</created>
@@ -96,7 +94,21 @@
       <option name="project" value="LOCAL" />
       <updated>1647590494193</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Arbeitsberichte für jedes Teammitglied">
+      <created>1647590857627</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1647590857627</updated>
+    </task>
+    <task id="LOCAL-00004" summary="hello-view.fxml, styleButtons.css">
+      <created>1647591051693</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1647591051693</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -116,6 +128,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="hello-view.fxml" />
     <MESSAGE value="Arbeitsberichte für jedes Teammitglied" />
-    <option name="LAST_COMMIT_MESSAGE" value="Arbeitsberichte für jedes Teammitglied" />
+    <MESSAGE value="hello-view.fxml, styleButtons.css" />
+    <option name="LAST_COMMIT_MESSAGE" value="hello-view.fxml, styleButtons.css" />
   </component>
 </project>
