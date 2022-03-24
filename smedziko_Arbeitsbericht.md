@@ -14,7 +14,10 @@ ___
 ##24.03.2022
 ___
 ### Arbeitsbericht:
-
+- .fxml - Dateien überarbeitet
+- Grafische Gestaltung
+- aktuelle Uhrzeit ausgeben
+- aktuelles Datum ausgeben
 ##25.03.2022
 ___
 ###Arbeitsbericht:
