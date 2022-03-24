@@ -14,7 +14,7 @@
                 <Button fx:id="TimerSwitch" mnemonicParsing="false" onAction="#timerPopUp" text="Timer" />
                 <Button fx:id="StoppuhrSwitch" mnemonicParsing="false" onAction="#stoppuhrPopUp" text="Stoppuhr" />
             </children></VBox>
-        <Label text="Analog" />
+        <Label text="Binaer" />
         <Button fx:id="AnalogeUhrSwitch" layoutX="217.0" layoutY="361.0" mnemonicParsing="false" onAction="#switchToScene1" text="Analoge Uhr" />
         <Button fx:id="DigitaleUhrSwitch" layoutX="102.0" layoutY="361.0" mnemonicParsing="false" onAction="#switchToScene2" text="Digitale Uhr" />
         <Button fx:id="StartUhrSwitch" layoutX="14.0" layoutY="361.0" mnemonicParsing="false" onAction="#switchToScene3" text="Startseite" />

@@ -26,6 +26,7 @@ public class HelloController {
     public Button StoppuhrSwitch;
     public Button TimerSwitch;
     public Button StartUhrSwitch;
+    public Button BinaereUhrSwitch;
     @FXML
     private Label welcomeText;
 
@@ -54,6 +55,14 @@ public class HelloController {
 
     public void switchToScene3(ActionEvent actionEvent) throws IOException {
         Parent root = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("hello-view.fxml")));
+        stage = (Stage)((Node)actionEvent.getSource()).getScene().getWindow();
+        scene = new Scene(root);
+        stage.setScene(scene);
+        stage.show();
+    }
+
+    public void switchToScene4(ActionEvent actionEvent) throws IOException {
+        Parent root = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("Binaer.fxml")));
         stage = (Stage)((Node)actionEvent.getSource()).getScene().getWindow();
         scene = new Scene(root);
         stage.setScene(scene);
