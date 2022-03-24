@@ -7,6 +7,10 @@ ___
 ### Arbeitsbericht:
 
 ##24.03.2022
+@Author: Kovacevic Ismael
+@Geaenderte Dateien: /
+@Was geaendert wurde:
+                     Erstellen des Klassendiagrams; Bearbeiten des Trellos
 ___
 ### Arbeitsbericht:
 
