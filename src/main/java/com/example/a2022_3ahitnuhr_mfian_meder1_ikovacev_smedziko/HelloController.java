@@ -65,4 +65,10 @@ public class HelloController {
         System.out.println(uhr.getCurrentTime());
         welcomeText.setText("Welcome to JavaFX Application!");
     }
+
+    public void stoppuhrPopUp(ActionEvent actionEvent) {
+    }
+
+    public void timerPopUp(ActionEvent actionEvent) {
+    }
 }

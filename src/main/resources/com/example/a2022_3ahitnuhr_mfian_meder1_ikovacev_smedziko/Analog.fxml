@@ -14,9 +14,9 @@
             <Label text="Analoge Uhr" />
          </children></HBox>
         <HBox fx:id="DatumHBox" layoutX="14.0" layoutY="111.0" prefHeight="98.0" prefWidth="426.0" />
-        <Button fx:id="DigitaleUhrSwitch" layoutX="14.0" layoutY="361.0" mnemonicParsing="false" onAction="#switchToScene2" text="Digitale Uhr" />
         <Button fx:id="StartUhrSwitch" layoutX="94.0" layoutY="361.0" mnemonicParsing="false" onAction="#switchToScene3" text="Startseite" />
-        <Button fx:id="StoppuhrSwitch" layoutX="165.0" layoutY="361.0" mnemonicParsing="false" text="Stoppuhr" />
-        <Button fx:id="TimerSwitch" layoutX="241.0" layoutY="361.0" mnemonicParsing="false" text="Timer" />
+        <Button fx:id="DigitaleUhrSwitch" layoutX="14.0" layoutY="361.0" mnemonicParsing="false" onAction="#switchToScene2" text="Digitale Uhr" />
+        <Button fx:id="StoppuhrSwitch" layoutX="165.0" layoutY="361.0" mnemonicParsing="false" text="Stoppuhr" onAction="#stoppuhrPopUp"/>
+        <Button fx:id="TimerSwitch" layoutX="241.0" layoutY="361.0" mnemonicParsing="false" text="Timer" onAction="#timerPopUp"/>
     </children>
 </AnchorPane>
