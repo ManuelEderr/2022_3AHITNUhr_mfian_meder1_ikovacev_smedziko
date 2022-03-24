@@ -5,7 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="bf76bf08-bf60-4e36-94d0-ca741ce9cdf2" name="Changes" comment="hello-view.fxml, styleButtons.css">
+      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/a2022_3ahitnuhr_mfian_meder1_ikovacev_smedziko/Analog.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/a2022_3ahitnuhr_mfian_meder1_ikovacev_smedziko/Digital.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/a2022_3ahitnuhr_mfian_meder1_ikovacev_smedziko/HelloApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/a2022_3ahitnuhr_mfian_meder1_ikovacev_smedziko/HelloApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/a2022_3ahitnuhr_mfian_meder1_ikovacev_smedziko/HelloController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/a2022_3ahitnuhr_mfian_meder1_ikovacev_smedziko/HelloController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/a2022_3ahitnuhr_mfian_meder1_ikovacev_smedziko/hello-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/a2022_3ahitnuhr_mfian_meder1_ikovacev_smedziko/hello-view.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/a2022_3ahitnuhr_mfian_meder1_ikovacev_smedziko/styleButtons.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/a2022_3ahitnuhr_mfian_meder1_ikovacev_smedziko/styleButtons.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/View/ShowUhr.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/View/ShowUhr.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/a2022_3ahitnuhr_mfian_meder1_ikovacev_smedziko/hello-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/a2022_3ahitnuhr_mfian_meder1_ikovacev_smedziko/hello-view.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/module-info.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/module-info.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,6 +58,13 @@
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.2" />
   </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\maede\Documents\2022_3AHITNUhr_mfian_meder1_ikovacev_smedziko\src\main\resources\com\example\a2022_3ahitnuhr_mfian_meder1_ikovacev_smedziko" />
+      <recent name="C:\Users\maede\Documents\2022_3AHITNUhr_mfian_meder1_ikovacev_smedziko\src\main\java\View" />
+      <recent name="C:\Users\maede\Documents\2022_3AHITNUhr_mfian_meder1_ikovacev_smedziko\src\main\java\Model" />
+    </key>
+  </component>
   <component name="RunManager">
     <configuration name="HelloApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.example.a2022_3ahitnuhr_mfian_meder1_ikovacev_smedziko.HelloApplication" />
@@ -79,6 +95,7 @@
       <updated>1647588036565</updated>
       <workItem from="1647588041306" duration="548000" />
       <workItem from="1647588911689" duration="2273000" />
+      <workItem from="1648125286776" duration="1952000" />
     </task>
     <task id="LOCAL-00001" summary="hello-view.fxml">
       <created>1647589998025</created>
@@ -131,6 +148,7 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="hello-view.fxml" />
