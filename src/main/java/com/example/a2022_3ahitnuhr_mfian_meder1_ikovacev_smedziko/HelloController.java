@@ -15,6 +15,8 @@ import javafx.stage.Stage;
 
 import java.io.IOException;
 import java.sql.Timestamp;
+import java.time.LocalDateTime;
+import java.time.format.DateTimeFormatter;
 import java.util.Objects;
 
 public class HelloController {
@@ -29,7 +31,10 @@ public class HelloController {
     public Button BinaereUhrSwitch;
     @FXML
     private Label welcomeText;
-
+    @FXML
+    protected Label Uhrzeit;
+    @FXML
+    protected Label Datum;
 
 
     Uhr uhr = new Uhr();
@@ -39,7 +44,7 @@ public class HelloController {
 
     public void switchToScene1(ActionEvent event) throws IOException {
         root = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("Analog.fxml")));
-        stage = (Stage)((Node)event.getSource()).getScene().getWindow();
+        stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
         scene = new Scene(root);
         stage.setScene(scene);
         stage.show();
@@ -47,7 +52,7 @@ public class HelloController {
 
     public void switchToScene2(ActionEvent event) throws IOException {
         Parent root = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("Digital.fxml")));
-        stage = (Stage)((Node)event.getSource()).getScene().getWindow();
+        stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
         scene = new Scene(root);
         stage.setScene(scene);
         stage.show();
@@ -55,7 +60,7 @@ public class HelloController {
 
     public void switchToScene3(ActionEvent actionEvent) throws IOException {
         Parent root = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("hello-view.fxml")));
-        stage = (Stage)((Node)actionEvent.getSource()).getScene().getWindow();
+        stage = (Stage) ((Node) actionEvent.getSource()).getScene().getWindow();
         scene = new Scene(root);
         stage.setScene(scene);
         stage.show();
@@ -79,5 +84,17 @@ public class HelloController {
     }
 
     public void timerPopUp(ActionEvent actionEvent) {
+    }
+
+    @FXML
+    protected void ShowUhrzeit() {
+        DateTimeFormatter dtf = DateTimeFormatter.ofPattern("HH:mm:ss");
+        System.out.println(dtf.format(LocalDateTime.now()));
+    }
+
+    @FXML
+    protected void ShowDatum() {
+        DateTimeFormatter dtf2 = DateTimeFormatter.ofPattern("dd/MM/yyyy");
+        System.out.println(dtf2.format(LocalDateTime.now()));
     }
 }
