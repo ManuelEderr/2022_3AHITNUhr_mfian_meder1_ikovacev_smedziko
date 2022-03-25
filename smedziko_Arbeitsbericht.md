@@ -19,7 +19,8 @@ ___
 - aktuelle Uhrzeit ausgeben
 - aktuelles Datum ausgeben
 ##25.03.2022
-- .
+- Datum ausprogrammieren
+- Uhrzeit ausprogrammieren
 ___
 ###Arbeitsbericht:
 

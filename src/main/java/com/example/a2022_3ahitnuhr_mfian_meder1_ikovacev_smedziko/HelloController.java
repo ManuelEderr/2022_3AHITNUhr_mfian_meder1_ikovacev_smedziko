@@ -106,6 +106,7 @@ public class HelloController {
         Date time = new Date();
         SimpleDateFormat dtf = new SimpleDateFormat("hh:mm:ss");
         System.out.println(dtf.format(time));
+
     }
 
     protected void Datum() {
@@ -113,6 +114,7 @@ public class HelloController {
         Date date = new Date();
         SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy");
         System.out.println(sdf.format(date));
+        Datum.setText(String.valueOf(date));
 
     }
 }

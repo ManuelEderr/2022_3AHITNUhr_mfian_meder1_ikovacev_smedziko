@@ -6,9 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="bf76bf08-bf60-4e36-94d0-ca741ce9cdf2" name="Changes" comment="ok">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/View/ShowUhrDigital.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/View/ShowUhrDigital.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/smedziko_Arbeitsbericht.md" beforeDir="false" afterPath="$PROJECT_DIR$/smedziko_Arbeitsbericht.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/a2022_3ahitnuhr_mfian_meder1_ikovacev_smedziko/HelloController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/a2022_3ahitnuhr_mfian_meder1_ikovacev_smedziko/HelloController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/a2022_3ahitnuhr_mfian_meder1_ikovacev_smedziko/Digital.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/a2022_3ahitnuhr_mfian_meder1_ikovacev_smedziko/Digital.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/example/a2022_3ahitnuhr_mfian_meder1_ikovacev_smedziko/HelloController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/a2022_3ahitnuhr_mfian_meder1_ikovacev_smedziko/HelloController.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -113,7 +112,7 @@
       <workItem from="1647588041306" duration="548000" />
       <workItem from="1647588911689" duration="2273000" />
       <workItem from="1648125286776" duration="4486000" />
-      <workItem from="1648192610822" duration="4094000" />
+      <workItem from="1648192610822" duration="5082000" />
     </task>
     <task id="LOCAL-00001" summary="hello-view.fxml">
       <created>1647589998025</created>
@@ -178,7 +177,14 @@
       <option name="project" value="LOCAL" />
       <updated>1648193161604</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="ok">
+      <created>1648196999402</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1648196999402</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
