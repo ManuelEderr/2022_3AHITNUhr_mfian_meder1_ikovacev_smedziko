@@ -4,15 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bf76bf08-bf60-4e36-94d0-ca741ce9cdf2" name="Changes" comment="3 Scenes mit Switch Buttons">
+    <list default="true" id="bf76bf08-bf60-4e36-94d0-ca741ce9cdf2" name="Changes" comment="ShowUhrDigital">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/a2022_3ahitnuhr_mfian_meder1_ikovacev_smedziko/HelloController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/a2022_3ahitnuhr_mfian_meder1_ikovacev_smedziko/HelloController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/a2022_3ahitnuhr_mfian_meder1_ikovacev_smedziko/Analog.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/a2022_3ahitnuhr_mfian_meder1_ikovacev_smedziko/Analog.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/a2022_3ahitnuhr_mfian_meder1_ikovacev_smedziko/Digital.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/a2022_3ahitnuhr_mfian_meder1_ikovacev_smedziko/Digital.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/a2022_3ahitnuhr_mfian_meder1_ikovacev_smedziko/hello-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/a2022_3ahitnuhr_mfian_meder1_ikovacev_smedziko/hello-view.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/a2022_3ahitnuhr_mfian_meder1_ikovacev_smedziko/HelloApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/a2022_3ahitnuhr_mfian_meder1_ikovacev_smedziko/HelloApplication.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/example/a2022_3ahitnuhr_mfian_meder1_ikovacev_smedziko/HelloController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/a2022_3ahitnuhr_mfian_meder1_ikovacev_smedziko/HelloController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/a2022_3ahitnuhr_mfian_meder1_ikovacev_smedziko/hello-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/a2022_3ahitnuhr_mfian_meder1_ikovacev_smedziko/hello-view.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -95,6 +89,7 @@
       <workItem from="1647588041306" duration="548000" />
       <workItem from="1647588911689" duration="2273000" />
       <workItem from="1648125286776" duration="3197000" />
+      <workItem from="1648191924965" duration="376000" />
     </task>
     <task id="LOCAL-00001" summary="hello-view.fxml">
       <created>1647589998025</created>
@@ -138,7 +133,14 @@
       <option name="project" value="LOCAL" />
       <updated>1648127360181</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="ShowUhrDigital">
+      <created>1648129066017</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1648129066017</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -154,13 +156,13 @@
         </entry>
       </map>
     </option>
-    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="hello-view.fxml" />
     <MESSAGE value="Arbeitsberichte für jedes Teammitglied" />
     <MESSAGE value="hello-view.fxml, styleButtons.css" />
     <MESSAGE value="3 Scenes mit Switch Buttons" />
-    <option name="LAST_COMMIT_MESSAGE" value="3 Scenes mit Switch Buttons" />
+    <MESSAGE value="ShowUhrDigital" />
+    <option name="LAST_COMMIT_MESSAGE" value="ShowUhrDigital" />
   </component>
 </project>
