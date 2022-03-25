@@ -19,6 +19,7 @@ ___
 - aktuelle Uhrzeit ausgeben
 - aktuelles Datum ausgeben
 ##25.03.2022
+- .
 ___
 ###Arbeitsbericht:
 
