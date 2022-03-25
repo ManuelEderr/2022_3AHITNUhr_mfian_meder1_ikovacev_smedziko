@@ -14,9 +14,8 @@ import javafx.scene.layout.VBox;
 import javafx.stage.Stage;
 
 import java.io.IOException;
-import java.sql.Timestamp;
-import java.time.LocalDateTime;
-import java.time.format.DateTimeFormatter;
+import java.text.SimpleDateFormat;
+import java.util.Date;
 import java.util.Objects;
 
 public class HelloController {
@@ -46,6 +45,7 @@ public class HelloController {
         root = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("Analog.fxml")));
         stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
         scene = new Scene(root);
+        stage.setTitle("Analoge Uhr");
         stage.setScene(scene);
         stage.show();
     }
@@ -54,14 +54,19 @@ public class HelloController {
         Parent root = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("Digital.fxml")));
         stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
         scene = new Scene(root);
+        stage.setTitle("Digitale Uhr");
         stage.setScene(scene);
         stage.show();
+        Uhrzeit();
+        Datum();
+
     }
 
     public void switchToScene3(ActionEvent actionEvent) throws IOException {
         Parent root = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("hello-view.fxml")));
         stage = (Stage) ((Node) actionEvent.getSource()).getScene().getWindow();
         scene = new Scene(root);
+        stage.setTitle("Startseite");
         stage.setScene(scene);
         stage.show();
     }
@@ -70,6 +75,7 @@ public class HelloController {
         Parent root = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("Binaer.fxml")));
         stage = (Stage)((Node)actionEvent.getSource()).getScene().getWindow();
         scene = new Scene(root);
+        stage.setTitle("Binäre Uhr");
         stage.setScene(scene);
         stage.show();
     }
@@ -86,15 +92,27 @@ public class HelloController {
     public void timerPopUp(ActionEvent actionEvent) {
     }
 
-    @FXML
-    protected void ShowUhrzeit() {
-        DateTimeFormatter dtf = DateTimeFormatter.ofPattern("HH:mm:ss");
-        System.out.println(dtf.format(LocalDateTime.now()));
+    public static void main(String[] args) {
+       Date date = new Date();
+       SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy");
+       System.out.println(sdf.format(date));
+       Date time = new Date();
+       SimpleDateFormat sdf2 = new SimpleDateFormat("hh:mm:ss");
+       System.out.println(sdf2.format(time));
     }
 
-    @FXML
-    protected void ShowDatum() {
-        DateTimeFormatter dtf2 = DateTimeFormatter.ofPattern("dd/MM/yyyy");
-        System.out.println(dtf2.format(LocalDateTime.now()));
+    protected void Uhrzeit() {
+        Uhr uhr = new Uhr();
+        Date time = new Date();
+        SimpleDateFormat dtf = new SimpleDateFormat("hh:mm:ss");
+        System.out.println(dtf.format(time));
+    }
+
+    protected void Datum() {
+        Uhr uhr = new Uhr();
+        Date date = new Date();
+        SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy");
+        System.out.println(sdf.format(date));
+
     }
 }
