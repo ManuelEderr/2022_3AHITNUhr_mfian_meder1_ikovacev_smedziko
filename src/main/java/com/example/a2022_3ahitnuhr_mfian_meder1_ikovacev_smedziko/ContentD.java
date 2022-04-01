@@ -5,11 +5,32 @@ import Model.tempAndTimezone;
 import View.showEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
+import javafx.scene.control.Button;
+import javafx.scene.control.Label;
+import javafx.scene.control.TextField;
 import javafx.scene.layout.AnchorPane;
+import javafx.scene.layout.HBox;
+import javafx.scene.layout.VBox;
 
 import java.io.IOException;
 
 public class ContentD extends AnchorPane {
+    public VBox WetterVBox;
+    public HBox UhrzeitHBox;
+    public HBox DatumHBox;
+    public Button DigitaleUhrSwitch;
+    public Button AnalogeUhrSwitch;
+    public Button StoppuhrSwitch;
+    public Button TimerSwitch;
+    public Button StartUhrSwitch;
+    public Button BinaereUhrSwitch;
+    public Label tempLabel;
+    public showEvent showEvent;
+    public tempAndTimezone tempandtimezone= null;
+    public Label teimzone;
+    TextField cityTextField;
+
+    Uhr uhr;
 
     public ContentD(){
         FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("ContentD.fxml"));
@@ -25,7 +46,12 @@ public class ContentD extends AnchorPane {
     }
 
     @FXML
-    public void onButtonClickOk(){
+    public void onButtonClickOk() throws IOException {
+        String city = cityTextField.getText();
+        tempandtimezone = new tempAndTimezone(city);
+        showEvent = new showEvent(tempandtimezone.getTemperature(), tempandtimezone.getTimezoneOffsetInSeconds(), tempLabel, teimzone);
+        showEvent.eventShow();
+        uhr = new Uhr(city);
     }
 
 }
