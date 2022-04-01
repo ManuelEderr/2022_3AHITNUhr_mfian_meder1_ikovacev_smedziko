@@ -18,11 +18,19 @@ ___
 - Grafische Gestaltung
 - aktuelle Uhrzeit ausgeben
 - aktuelles Datum ausgeben
+
 ##25.03.2022
+___
+### Arbeitsbericht:
 - Datum ausprogrammieren
 - Uhrzeit ausprogrammieren
+- Controller für alle .fxml-Dateien erstellen
+
+##01.04.2022
 ___
-###Arbeitsbericht:
+### Arbeitsbericht:
+- Controller für alle .fxml-Dateien fertigstellen
+
 
 ##07.04.2022 (Vormittagseinheit)
 ___
