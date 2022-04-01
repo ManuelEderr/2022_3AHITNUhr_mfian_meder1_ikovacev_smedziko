@@ -10,8 +10,26 @@
 .TimerSwitch{
     -fx-background-color: "#145369"
 }
-.BackgroundWatch{
+#BackgroundWatch{
     -fx-background-image: url("https://www.htl-steyr.ac.at/images/htl/lehrer/mike.jpg");
+    -fx-background-repeat: no-repeat;
+    -fx-background-size: 500 500;
+    -fx-background-position: center center;
+}
+#BackgroundWatch1 {
+    -fx-background-image: url("https://www.htl-steyr.ac.at/images/htl/lehrer/wolfi.jpg");
+    -fx-background-repeat: no-repeat;
+    -fx-background-size: 500 500;
+    -fx-background-position: center center;
+}
+#BackgroundWatch2 {
+    -fx-background-image: url("https://www.htl-steyr.ac.at/images/htl/lehrer/rabs.jpg");
+    -fx-background-repeat: no-repeat;
+    -fx-background-size: 500 500;
+    -fx-background-position: center center;
+}
+#BackgroundWatch3 {
+    -fx-background-image: url("https://www.htl-steyr.ac.at/images/htl/lehrer/parz.jpg");
     -fx-background-repeat: no-repeat;
     -fx-background-size: 500 500;
     -fx-background-position: center center;
