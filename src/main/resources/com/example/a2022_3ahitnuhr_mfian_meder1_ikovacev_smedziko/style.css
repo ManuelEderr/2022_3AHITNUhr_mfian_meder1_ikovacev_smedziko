@@ -1,0 +1,18 @@
+.DigitaleUhrSwitch{
+    -fx-background-color: "#145369"
+}
+.AnalogeUhrSwitch{
+    -fx-background-color: "#145369"
+}
+.StoppuhrSwitch{
+    -fx-background-color: "#145369"
+}
+.TimerSwitch{
+    -fx-background-color: "#145369"
+}
+.BackgroundWatch{
+    -fx-background-image: url("https://www.htl-steyr.ac.at/images/htl/lehrer/mike.jpg");
+    -fx-background-repeat: no-repeat;
+    -fx-background-size: 500 500;
+    -fx-background-position: center center;
+}

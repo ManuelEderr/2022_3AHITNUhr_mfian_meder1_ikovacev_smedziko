@@ -6,9 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="bf76bf08-bf60-4e36-94d0-ca741ce9cdf2" name="Changes" comment="ok">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/smedziko_Arbeitsbericht.md" beforeDir="false" afterPath="$PROJECT_DIR$/smedziko_Arbeitsbericht.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/a2022_3ahitnuhr_mfian_meder1_ikovacev_smedziko/HelloController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/a2022_3ahitnuhr_mfian_meder1_ikovacev_smedziko/HelloController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/a2022_3ahitnuhr_mfian_meder1_ikovacev_smedziko/HelloController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/a2022_3ahitnuhr_mfian_meder1_ikovacev_smedziko/HelloController.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -18,9 +15,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="CSS File" />
         <option value="FxmlFile" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -31,7 +28,6 @@
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-    <option name="UPDATE_TYPE" value="REBASE" />
   </component>
   <component name="GitSEFilterConfiguration">
     <file-type-list>
@@ -67,7 +63,7 @@
       <recent name="C:\Users\maede\Documents\2022_3AHITNUhr_mfian_meder1_ikovacev_smedziko\src\main\java\Model" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.HelloApplication">
+  <component name="RunManager" selected="Application.Stoppuhr">
     <configuration name="HelloApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.example.a2022_3ahitnuhr_mfian_meder1_ikovacev_smedziko.HelloApplication" />
       <module name="2022_3AHITNUhr_mfian_meder1_ikovacev_smedziko" />
@@ -94,10 +90,38 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Stoppuhr" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Model.Stoppuhr" />
+      <module name="2022_3AHITNUhr_mfian_meder1_ikovacev_smedziko" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Model.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="StoppuhrFunktionen" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Model.StoppuhrFunktionen" />
+      <module name="2022_3AHITNUhr_mfian_meder1_ikovacev_smedziko" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Model.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.HelloApplication" />
+        <item itemvalue="Application.Stoppuhr" />
+        <item itemvalue="Application.StoppuhrFunktionen" />
         <item itemvalue="Application.HelloController" />
+        <item itemvalue="Application.HelloApplication" />
       </list>
     </recent_temporary>
   </component>
@@ -112,7 +136,9 @@
       <workItem from="1647588041306" duration="548000" />
       <workItem from="1647588911689" duration="2273000" />
       <workItem from="1648125286776" duration="4486000" />
-      <workItem from="1648192610822" duration="5082000" />
+      <workItem from="1648192610822" duration="5097000" />
+      <workItem from="1648205177546" duration="9000" />
+      <workItem from="1648793259284" duration="3608000" />
     </task>
     <task id="LOCAL-00001" summary="hello-view.fxml">
       <created>1647589998025</created>
@@ -184,7 +210,21 @@
       <option name="project" value="LOCAL" />
       <updated>1648196999402</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="ok">
+      <created>1648198974284</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1648198974284</updated>
+    </task>
+    <task id="LOCAL-00012" summary="ok">
+      <created>1648793570073</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1648793570073</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
