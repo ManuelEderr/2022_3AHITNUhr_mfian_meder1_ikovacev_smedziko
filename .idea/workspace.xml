@@ -4,47 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bf76bf08-bf60-4e36-94d0-ca741ce9cdf2" name="Changes" comment="ok">
-      <change afterPath="$PROJECT_DIR$/src/main/java/Model/tempAndTimezone.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/OpenWheaterMap/City.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/OpenWheaterMap/Clouds.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/OpenWheaterMap/Coord.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/OpenWheaterMap/Example.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/OpenWheaterMap/List.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/OpenWheaterMap/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/OpenWheaterMap/Snow.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/OpenWheaterMap/Sys.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/OpenWheaterMap/Weather.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/OpenWheaterMap/Wind.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/View/showEvent.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/a2022_3ahitnuhr_mfian_meder1_ikovacev_smedziko/App.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/a2022_3ahitnuhr_mfian_meder1_ikovacev_smedziko/ContentA.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/a2022_3ahitnuhr_mfian_meder1_ikovacev_smedziko/ContentB.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/a2022_3ahitnuhr_mfian_meder1_ikovacev_smedziko/ContentC.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/a2022_3ahitnuhr_mfian_meder1_ikovacev_smedziko/PrimaryController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/a2022_3ahitnuhr_mfian_meder1_ikovacev_smedziko/ContentA.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/a2022_3ahitnuhr_mfian_meder1_ikovacev_smedziko/ContentB.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/a2022_3ahitnuhr_mfian_meder1_ikovacev_smedziko/ContentC.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/a2022_3ahitnuhr_mfian_meder1_ikovacev_smedziko/primary.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/2022_3AHITNUhr_mfian_meder1_ikovacev_smedziko.iml" beforeDir="false" afterPath="$PROJECT_DIR$/2022_3AHITNUhr_mfian_meder1_ikovacev_smedziko.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Model/Event.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Model/Event.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Model/Uhr.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Model/Uhr.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/a2022_3ahitnuhr_mfian_meder1_ikovacev_smedziko/HelloApplication.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/a2022_3ahitnuhr_mfian_meder1_ikovacev_smedziko/HelloController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/module-info.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/a2022_3ahitnuhr_mfian_meder1_ikovacev_smedziko/Analog.fxml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/a2022_3ahitnuhr_mfian_meder1_ikovacev_smedziko/Binaer.fxml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/a2022_3ahitnuhr_mfian_meder1_ikovacev_smedziko/Digital.fxml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/a2022_3ahitnuhr_mfian_meder1_ikovacev_smedziko/hello-view.fxml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Model/Event.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Model/Timer.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Model/Uhr.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/View/ShowUhr.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/a2022_3ahitnuhr_mfian_meder1_ikovacev_smedziko/HelloApplication.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/a2022_3ahitnuhr_mfian_meder1_ikovacev_smedziko/HelloController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/a2022_3ahitnuhr_mfian_meder1_ikovacev_smedziko/hello-view.fxml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/module-info.class" beforeDir="false" />
+    <list default="true" id="bf76bf08-bf60-4e36-94d0-ca741ce9cdf2" name="Changes" comment="AllChanged">
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/a2022_3ahitnuhr_mfian_meder1_ikovacev_smedziko/ContentD.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/a2022_3ahitnuhr_mfian_meder1_ikovacev_smedziko/ContentD.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/a2022_3ahitnuhr_mfian_meder1_ikovacev_smedziko/PrimaryController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/a2022_3ahitnuhr_mfian_meder1_ikovacev_smedziko/PrimaryController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/a2022_3ahitnuhr_mfian_meder1_ikovacev_smedziko/ContentD.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/a2022_3ahitnuhr_mfian_meder1_ikovacev_smedziko/ContentD.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,8 +17,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="CSS File" />
+        <option value="Class" />
         <option value="FxmlFile" />
       </list>
     </option>
@@ -154,7 +117,7 @@
       <workItem from="1647588041306" duration="548000" />
       <workItem from="1647588911689" duration="2273000" />
       <workItem from="1648125286776" duration="4486000" />
-      <workItem from="1648797105611" duration="992000" />
+      <workItem from="1648797105611" duration="1650000" />
     </task>
     <task id="LOCAL-00001" summary="hello-view.fxml">
       <created>1647589998025</created>
@@ -205,7 +168,14 @@
       <option name="project" value="LOCAL" />
       <updated>1648128698087</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="AllChanged">
+      <created>1648798340388</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1648798340388</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -229,6 +199,7 @@
     <MESSAGE value="hello-view.fxml, styleButtons.css" />
     <MESSAGE value="3 Scenes mit Switch Buttons" />
     <MESSAGE value="ok" />
-    <option name="LAST_COMMIT_MESSAGE" value="ok" />
+    <MESSAGE value="AllChanged" />
+    <option name="LAST_COMMIT_MESSAGE" value="AllChanged" />
   </component>
 </project>
