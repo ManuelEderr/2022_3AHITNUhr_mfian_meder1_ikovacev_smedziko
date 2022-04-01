@@ -5,7 +5,7 @@ import java.sql.Timestamp;
 
 public class Event {
 
-    private java.sql.Timestamp timestamp;
+    private Timestamp timestamp;
     private String event;
 
     public Timestamp getTimestamp() {

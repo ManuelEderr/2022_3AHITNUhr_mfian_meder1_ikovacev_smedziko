@@ -1,6 +1,7 @@
 package Model;
 
 
+import java.io.IOException;
 import java.sql.Timestamp;
 
 public class Uhr {
@@ -11,14 +12,18 @@ public class Uhr {
     private String Temperatur;
     private String[] bilderFuerWetter;
     private int degree;
+    tempAndTimezone timezone;
 
+    public Uhr(String city) {
+        timezone = new tempAndTimezone(city);
+    }
 
     public int getDegree() {
         return degree;
     }
 
-    public Timestamp getCurrentTime() {
-        setCurrentTime(new Timestamp(System.currentTimeMillis()));
+    public Timestamp getCurrentTime() throws IOException {
+        setCurrentTime(new Timestamp(System.currentTimeMillis() - timezone.getTimezoneOffsetInSeconds()));
         return CurrentTime;
     }
 
