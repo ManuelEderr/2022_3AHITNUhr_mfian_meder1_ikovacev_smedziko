@@ -46,6 +46,8 @@ public class HelloController {
         stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
         scene = new Scene(root);
         stage.setTitle("Analoge Uhr");
+        root.setId("BackgroundWatch1");
+        scene.getStylesheets().add(String.valueOf(this.getClass().getResource("style.css")));
         stage.setScene(scene);
         stage.show();
     }
@@ -55,6 +57,8 @@ public class HelloController {
         stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
         scene = new Scene(root);
         stage.setTitle("Digitale Uhr");
+        root.setId("BackgroundWatch");
+        scene.getStylesheets().add(String.valueOf(this.getClass().getResource("style.css")));
         stage.setScene(scene);
         stage.show();
         Uhrzeit();
@@ -67,6 +71,8 @@ public class HelloController {
         stage = (Stage) ((Node) actionEvent.getSource()).getScene().getWindow();
         scene = new Scene(root);
         stage.setTitle("Startseite");
+        root.setId("BackgroundWatch2");
+        scene.getStylesheets().add(String.valueOf(this.getClass().getResource("style.css")));
         stage.setScene(scene);
         stage.show();
     }
@@ -76,6 +82,8 @@ public class HelloController {
         stage = (Stage)((Node)actionEvent.getSource()).getScene().getWindow();
         scene = new Scene(root);
         stage.setTitle("Binäre Uhr");
+        root.setId("BackgroundWatch3");
+        scene.getStylesheets().add(String.valueOf(this.getClass().getResource("style.css")));
         stage.setScene(scene);
         stage.show();
     }

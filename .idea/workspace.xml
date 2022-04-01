@@ -6,6 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="bf76bf08-bf60-4e36-94d0-ca741ce9cdf2" name="Changes" comment="ok">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/a2022_3ahitnuhr_mfian_meder1_ikovacev_smedziko/HelloController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/a2022_3ahitnuhr_mfian_meder1_ikovacev_smedziko/HelloController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/a2022_3ahitnuhr_mfian_meder1_ikovacev_smedziko/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/a2022_3ahitnuhr_mfian_meder1_ikovacev_smedziko/style.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -63,7 +65,7 @@
       <recent name="C:\Users\maede\Documents\2022_3AHITNUhr_mfian_meder1_ikovacev_smedziko\src\main\java\Model" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Stoppuhr">
+  <component name="RunManager" selected="Application.HelloApplication">
     <configuration name="HelloApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.example.a2022_3ahitnuhr_mfian_meder1_ikovacev_smedziko.HelloApplication" />
       <module name="2022_3AHITNUhr_mfian_meder1_ikovacev_smedziko" />
@@ -118,10 +120,10 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.HelloApplication" />
         <item itemvalue="Application.Stoppuhr" />
         <item itemvalue="Application.StoppuhrFunktionen" />
         <item itemvalue="Application.HelloController" />
-        <item itemvalue="Application.HelloApplication" />
       </list>
     </recent_temporary>
   </component>
@@ -138,7 +140,7 @@
       <workItem from="1648125286776" duration="4486000" />
       <workItem from="1648192610822" duration="5097000" />
       <workItem from="1648205177546" duration="9000" />
-      <workItem from="1648793259284" duration="3608000" />
+      <workItem from="1648793259284" duration="4443000" />
     </task>
     <task id="LOCAL-00001" summary="hello-view.fxml">
       <created>1647589998025</created>
@@ -224,7 +226,14 @@
       <option name="project" value="LOCAL" />
       <updated>1648793570073</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="ok">
+      <created>1648797167071</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1648797167071</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
