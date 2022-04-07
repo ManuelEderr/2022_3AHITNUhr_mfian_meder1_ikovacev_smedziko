@@ -13,6 +13,9 @@ import java.sql.Timestamp;
 import java.text.SimpleDateFormat;
 import java.util.Arrays;
 
+/**
+ * Controller für Binaere Uhr
+ */
 public class ContentC extends AnchorPane {
 Uhr uhrForC;
 String time;
