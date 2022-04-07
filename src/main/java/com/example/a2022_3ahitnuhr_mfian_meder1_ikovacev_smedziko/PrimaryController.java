@@ -10,12 +10,13 @@ import javafx.scene.layout.BorderPane;
 import java.io.IOException;
 
 public class PrimaryController {
-
-    public Label tempLabel;
+        public Label tempLabel;
     public Button timerBTN;
     public Button stoppuhrBTN;
     @FXML
     BorderPane mainPane;
+    @FXML
+            Label LabelForTesting;
 
     Uhr uhr;
 
@@ -26,11 +27,22 @@ public class PrimaryController {
     ContentD contentD;
 
 
+    @FXML
+    public void initialize() {
+        System.out.println("second");
+        uhr = new Uhr("AT");
+        Thread updateTimeThread = new Thread(new calculateNewTime(uhr));
+        updateTimeThread.start();
+
+    }
+
 
     @FXML
-    public void onBtnAClick(){
-        contentA = new ContentA();
-        mainPane.setCenter(contentA);
+    public void onBtnAClick()  {
+             contentA = new ContentA();
+            mainPane.setCenter(contentA);
+
+
     }
 
     @FXML
@@ -41,7 +53,7 @@ public class PrimaryController {
 
     @FXML
     public void onBtnCClick(){
-        contentC = new ContentC();
+        contentC = new ContentC(uhr);
         mainPane.setCenter(contentC);
     }
 
@@ -51,6 +63,29 @@ public class PrimaryController {
         mainPane.setCenter(contentD);
     }
 
+    public static class calculateNewTime implements Runnable{
+        Uhr uhr;
+        boolean abbruch;
+
+        calculateNewTime(Uhr uhrToUpdate){
+            uhr = uhrToUpdate;
+            abbruch = false;
+        }
+
+        @Override
+        public void run() {
+            while (!abbruch) {
+                uhr.NewTime();
+                System.out.println(uhr.getCurrentTime());
+                try {
+                    Thread.sleep(1000);
+                } catch (InterruptedException e) {
+                    e.printStackTrace();
+                }
+
+            }
+        }
+    }
 
 
 

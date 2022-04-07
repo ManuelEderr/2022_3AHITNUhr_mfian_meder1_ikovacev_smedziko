@@ -16,6 +16,11 @@ public class Uhr {
 
     public Uhr(String city) {
         timezone = new tempAndTimezone(city);
+        CurrentTime=new Timestamp(System.currentTimeMillis());
+    }
+
+    public Timestamp getCurrentTime() {
+        return CurrentTime;
     }
 
     public int getDegree() {
@@ -62,8 +67,8 @@ public class Uhr {
     /**
      * gets New time from old and current System time
      */
-    public void getNewTime(){
-        Long curerntTimeinLong= Long.getLong(CurrentTime.toString());
-        CurrentTime =new Timestamp(curerntTimeinLong + (System.currentTimeMillis() - curerntTimeinLong));
+    public void NewTime(){
+        long curerntTimeinLong= CurrentTime.getTime();
+        CurrentTime = new Timestamp(curerntTimeinLong + (System.currentTimeMillis() - curerntTimeinLong));
     }
 }
