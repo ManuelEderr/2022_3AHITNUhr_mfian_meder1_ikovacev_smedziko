@@ -76,7 +76,6 @@ public class PrimaryController {
         public void run() {
             while (!abbruch) {
                 uhr.NewTime();
-                System.out.println(uhr.getCurrentTime());
                 try {
                     Thread.sleep(1000);
                 } catch (InterruptedException e) {
