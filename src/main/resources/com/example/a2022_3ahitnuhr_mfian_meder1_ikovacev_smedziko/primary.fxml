@@ -27,12 +27,6 @@
                <Label fx:id="tempLabel" text="0°" />
             </children>
          </HBox>
-         <HBox prefHeight="35.0" prefWidth="129.0">
-            <children>
-               <Label text="Timezone: " />
-               <Label fx:id="timezoneLabel" text="UTC" />
-            </children>
-         </HBox>
          <Button fx:id="timerBTN" mnemonicParsing="false" text="Timer" />
          <Button fx:id="stoppuhrBTN" mnemonicParsing="false" text="Stoppuhr" />
       </VBox>
