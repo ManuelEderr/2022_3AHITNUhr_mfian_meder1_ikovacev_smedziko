@@ -34,11 +34,15 @@ ___
 
 ##07.04.2022 (Vormittagseinheit)
 ___
+
 ###Arbeitsbericht:
+- Digitale Uhr
 
 ##07.04.2022 (Nachmittagseinheit)
 ___
+
 ###Arbeitsbericht:
+- Design: Digitale Uhr
 
 ##08.04.2022
 ___

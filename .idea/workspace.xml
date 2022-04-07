@@ -5,13 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="bf76bf08-bf60-4e36-94d0-ca741ce9cdf2" name="Changes" comment="ok">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/a2022_3ahitnuhr_mfian_meder1_ikovacev_smedziko/Font_Digitaluhr/font_digital.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/View/ShowUhr.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/View/ShowUhr.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/View/ShowUhrDigital.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/View/ShowUhrDigital.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/a2022_3ahitnuhr_mfian_meder1_ikovacev_smedziko/ContentB.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/a2022_3ahitnuhr_mfian_meder1_ikovacev_smedziko/ContentB.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/module-info.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/a2022_3ahitnuhr_mfian_meder1_ikovacev_smedziko/ContentB.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/a2022_3ahitnuhr_mfian_meder1_ikovacev_smedziko/ContentB.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/smedziko_Arbeitsbericht.md" beforeDir="false" afterPath="$PROJECT_DIR$/smedziko_Arbeitsbericht.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -29,7 +24,6 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-    <option name="UPDATE_TYPE" value="REBASE" />
   </component>
   <component name="GitSEFilterConfiguration">
     <file-type-list>
@@ -202,7 +196,14 @@
       <option name="project" value="LOCAL" />
       <updated>1648798340388</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="ok">
+      <created>1649335884865</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1649335884865</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -224,9 +225,9 @@
     <MESSAGE value="Arbeitsberichte für jedes Teammitglied" />
     <MESSAGE value="hello-view.fxml, styleButtons.css" />
     <MESSAGE value="3 Scenes mit Switch Buttons" />
-    <MESSAGE value="ok" />
     <MESSAGE value="AllChanged" />
-    <option name="LAST_COMMIT_MESSAGE" value="AllChanged" />
+    <MESSAGE value="ok" />
+    <option name="LAST_COMMIT_MESSAGE" value="ok" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
