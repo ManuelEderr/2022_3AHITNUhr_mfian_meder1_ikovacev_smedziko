@@ -27,12 +27,21 @@ public class ContentD extends AnchorPane {
     public Label tempLabel;
     public showEvent showEvent;
     public tempAndTimezone tempandtimezone= null;
+    public Label timezoneLabel;
+    @FXML
     public Label teimzone;
+    @FXML
     TextField cityTextField;
+
+    String city;
 
     Uhr uhr;
 
-    public ContentD(){
+    public ContentD(Label timezoneLabel, Label tempLabel){
+
+        this.tempLabel = tempLabel;
+        this.timezoneLabel = timezoneLabel;
+
         FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("ContentD.fxml"));
 
         fxmlLoader.setRoot(this);
@@ -45,13 +54,21 @@ public class ContentD extends AnchorPane {
         }
     }
 
+    public String getCity() {
+        return city;
+    }
+
     @FXML
     public void onButtonClickOk() throws IOException {
-        String city = cityTextField.getText();
+        city = cityTextField.getText();
+        city.replaceAll("\\s*", "+");
         tempandtimezone = new tempAndTimezone(city);
-        showEvent = new showEvent(tempandtimezone.getTemperature(), tempandtimezone.getTimezoneOffsetInSeconds(), tempLabel, teimzone);
+        showEvent = new showEvent(tempandtimezone.getTemperature(), tempandtimezone.getTimezoneOffsetInSeconds(), timezoneLabel, tempLabel);
         showEvent.eventShow();
         uhr = new Uhr(city);
+        System.out.println(uhr.getCurrentTime());
     }
+
+
 
 }
