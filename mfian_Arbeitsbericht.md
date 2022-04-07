@@ -24,12 +24,13 @@ ___
 ##07.04.2022 (Vormittagseinheit)
 ___
 ###Arbeitsbericht:
-- Krankheitsbedingt nicht anwesend!
+- ContentA.fxml, Analoguhr Design fertig und funktionsfähig
+- 
 
 ##07.04.2022 (Nachmittagseinheit)
 ___
 ###Arbeitsbericht:
-- Krankheitsbedingt nicht anwesend!
+- aaa
 
 ##08.04.2022
 ___

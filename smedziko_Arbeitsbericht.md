@@ -18,17 +18,31 @@ ___
 - Grafische Gestaltung
 - aktuelle Uhrzeit ausgeben
 - aktuelles Datum ausgeben
+
 ##25.03.2022
 ___
-###Arbeitsbericht:
+### Arbeitsbericht:
+- Datum ausprogrammieren
+- Uhrzeit ausprogrammieren
+- Controller für alle .fxml-Dateien erstellen
+
+##01.04.2022
+___
+### Arbeitsbericht:
+- Controller für alle .fxml-Dateien fertigstellen
+
 
 ##07.04.2022 (Vormittagseinheit)
 ___
+
 ###Arbeitsbericht:
+- Digitale Uhr
 
 ##07.04.2022 (Nachmittagseinheit)
 ___
+
 ###Arbeitsbericht:
+- Design: Digitale Uhr
 
 ##08.04.2022
 ___
