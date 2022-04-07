@@ -1,13 +1,108 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.scene.control.*?>
-<?import java.lang.*?>
-<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
 <?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Circle?>
 
-<fx:root prefHeight="200.0" prefWidth="300.0" type="AnchorPane" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+<fx:root prefHeight="292.0" prefWidth="382.0" type="AnchorPane" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1">
     <children>
-        <ListView layoutX="50.0" layoutY="-26.0" prefHeight="200.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+          <VBox layoutY="3.0" prefHeight="290.0" prefWidth="434.0">
+              <children>
+                  <HBox prefHeight="100.0" prefWidth="200.0">
+                      <children>
+                          <Circle fx:id="hour8" radius="30.0" stroke="BLACK" strokeType="INSIDE">
+                              <HBox.margin>
+                                  <Insets left="50.0" top="20.0" />
+                              </HBox.margin>
+                          </Circle>
+                          <Circle fx:id="hour4" radius="30.0" stroke="BLACK" strokeType="INSIDE">
+                              <HBox.margin>
+                                  <Insets left="20.0" top="20.0" />
+                              </HBox.margin>
+                          </Circle>
+                          <Circle fx:id="hour2" radius="30.0" stroke="BLACK" strokeType="INSIDE">
+                              <HBox.margin>
+                                  <Insets left="20.0" top="20.0" />
+                              </HBox.margin>
+                          </Circle>
+                          <Circle fx:id="hour1" radius="30.0" stroke="BLACK" strokeType="INSIDE">
+                              <HBox.margin>
+                                  <Insets left="20.0" top="20.0" />
+                              </HBox.margin>
+                          </Circle>
+                      </children>
+                  </HBox>
+                  <HBox prefHeight="100.0" prefWidth="200.0">
+                      <children>
+                          <Circle radius="25.0" stroke="BLACK" strokeType="INSIDE">
+                              <HBox.margin>
+                                  <Insets left="45.0" top="20.0" />
+                              </HBox.margin>
+                          </Circle>
+                          <Circle radius="25.0" stroke="BLACK" strokeType="INSIDE">
+                              <HBox.margin>
+                                  <Insets left="17.0" top="20.0" />
+                              </HBox.margin>
+                          </Circle>
+                          <Circle radius="25.0" stroke="BLACK" strokeType="INSIDE">
+                              <HBox.margin>
+                                  <Insets left="17.0" top="20.0" />
+                              </HBox.margin>
+                          </Circle>
+                          <Circle radius="25.0" stroke="BLACK" strokeType="INSIDE">
+                              <HBox.margin>
+                                  <Insets left="17.0" top="20.0" />
+                              </HBox.margin>
+                          </Circle>
+                          <Circle radius="25.0" stroke="BLACK" strokeType="INSIDE">
+                              <HBox.margin>
+                                  <Insets left="17.0" top="20.0" />
+                              </HBox.margin>
+                          </Circle>
+                          <Circle radius="25.0" stroke="BLACK" strokeType="INSIDE">
+                              <HBox.margin>
+                                  <Insets left="17.0" top="20.0" />
+                              </HBox.margin>
+                          </Circle>
+                      </children>
+                  </HBox>
+                  <HBox prefHeight="100.0" prefWidth="200.0">
+                      <children>
+                          <Circle radius="25.0" stroke="BLACK" strokeType="INSIDE">
+                              <HBox.margin>
+                                  <Insets left="45.0" top="20.0" />
+                              </HBox.margin>
+                          </Circle>
+                          <Circle radius="25.0" stroke="BLACK" strokeType="INSIDE">
+                              <HBox.margin>
+                                  <Insets left="17.0" top="20.0" />
+                              </HBox.margin>
+                          </Circle>
+                          <Circle radius="25.0" stroke="BLACK" strokeType="INSIDE">
+                              <HBox.margin>
+                                  <Insets left="17.0" top="20.0" />
+                              </HBox.margin>
+                          </Circle>
+                          <Circle radius="25.0" stroke="BLACK" strokeType="INSIDE">
+                              <HBox.margin>
+                                  <Insets left="17.0" top="20.0" />
+                              </HBox.margin>
+                          </Circle>
+                          <Circle radius="25.0" stroke="BLACK" strokeType="INSIDE">
+                              <HBox.margin>
+                                  <Insets left="17.0" top="20.0" />
+                              </HBox.margin>
+                          </Circle>
+                          <Circle radius="25.0" stroke="BLACK" strokeType="INSIDE">
+                              <HBox.margin>
+                                  <Insets left="17.0" top="20.0" />
+                              </HBox.margin>
+                          </Circle>
+                      </children>
+                  </HBox>
+              </children>
+          </VBox>
     </children>
-    <Label>ContentC</Label>
 </fx:root>

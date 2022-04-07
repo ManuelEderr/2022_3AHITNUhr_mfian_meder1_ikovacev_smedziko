@@ -16,19 +16,20 @@ public class Uhr {
 
     public Uhr(String city) {
         timezone = new tempAndTimezone(city);
+        CurrentTime=new Timestamp(System.currentTimeMillis());
+    }
+
+    public Timestamp getCurrentTime() {
+        return CurrentTime;
     }
 
     public int getDegree() {
         return degree;
     }
 
-    public Timestamp getCurrentTime() throws IOException {
-        setCurrentTime(new Timestamp(System.currentTimeMillis() - timezone.getTimezoneOffsetInSeconds()));
-        return CurrentTime;
-    }
 
     public void setCurrentTime(Timestamp currentTime) {
-        CurrentTime = currentTime;
+       CurrentTime = currentTime;
     }
 
     public Event[] getEvent() {
@@ -61,5 +62,13 @@ public class Uhr {
 
     public void setBilderFuerWetter(String[] bilderFuerWetter) {
         this.bilderFuerWetter = bilderFuerWetter;
+    }
+
+    /**
+     * gets New time from old and current System time
+     */
+    public void NewTime(){
+        long curerntTimeinLong= CurrentTime.getTime();
+        CurrentTime = new Timestamp(curerntTimeinLong + (System.currentTimeMillis() - curerntTimeinLong));
     }
 }

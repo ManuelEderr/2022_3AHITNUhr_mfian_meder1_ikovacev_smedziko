@@ -1,13 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.scene.control.Button?>
-<?import javafx.scene.control.Label?>
-<?import javafx.scene.control.ToolBar?>
-<?import javafx.scene.layout.BorderPane?>
-<?import javafx.scene.layout.HBox?>
-<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
 
-<BorderPane fx:id="mainPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.a2022_3ahitnuhr_mfian_meder1_ikovacev_smedziko.PrimaryController">
+<BorderPane fx:id="mainPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.a2022_3ahitnuhr_mfian_meder1_ikovacev_smedziko.PrimaryController">
    <left>
       <ToolBar orientation="VERTICAL" BorderPane.alignment="CENTER">
          <items>
@@ -27,14 +23,11 @@
                <Label fx:id="tempLabel" text="0°" />
             </children>
          </HBox>
-         <HBox prefHeight="35.0" prefWidth="129.0">
-            <children>
-               <Label text="Timezone: " />
-               <Label fx:id="timezoneLabel" text="UTC" />
-            </children>
-         </HBox>
          <Button fx:id="timerBTN" mnemonicParsing="false" text="Timer" />
          <Button fx:id="stoppuhrBTN" mnemonicParsing="false" text="Stoppuhr" />
       </VBox>
    </right>
+   <center>
+      <Label fx:id="LabelForTesting" text="Label" BorderPane.alignment="CENTER" />
+   </center>
 </BorderPane>

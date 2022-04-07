@@ -12,17 +12,14 @@ public class showEvent {
     Label teimzone;
     int timezone;
 
-    public showEvent(String temperature, int timezone,  Label tempLabel, Label teimzone) {
+    public showEvent(String temperature,Label tempLabel) {
         this.temperature = temperature;
         this.tempLabel = tempLabel;
-        this.teimzone = teimzone;
-        this.timezone = timezone;
     }
 
     public void eventShow(){
         temperatureInteger = round(Double.parseDouble(temperature) - 273.15, 2);
         tempLabel.setText(temperatureInteger + "°");
-        teimzone.setText(Integer.toString(timezone));
     }
 
 

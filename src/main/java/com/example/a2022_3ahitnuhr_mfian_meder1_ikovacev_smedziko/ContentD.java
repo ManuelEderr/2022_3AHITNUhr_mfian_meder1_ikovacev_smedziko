@@ -34,13 +34,11 @@ public class ContentD extends AnchorPane {
     TextField cityTextField;
 
     String city;
-
     Uhr uhr;
 
-    public ContentD(Label timezoneLabel, Label tempLabel){
+    public ContentD(Label tempLabel){
 
         this.tempLabel = tempLabel;
-        this.timezoneLabel = timezoneLabel;
 
         FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("ContentD.fxml"));
 
@@ -63,12 +61,8 @@ public class ContentD extends AnchorPane {
         city = cityTextField.getText();
         city.replaceAll("\\s*", "+");
         tempandtimezone = new tempAndTimezone(city);
-        showEvent = new showEvent(tempandtimezone.getTemperature(), tempandtimezone.getTimezoneOffsetInSeconds(), timezoneLabel, tempLabel);
+        showEvent = new showEvent(tempandtimezone.getTemperature(), tempLabel);
         showEvent.eventShow();
-        uhr = new Uhr(city);
-        System.out.println(uhr.getCurrentTime());
     }
-
-
 
 }
