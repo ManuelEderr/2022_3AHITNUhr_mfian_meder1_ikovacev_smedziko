@@ -8,11 +8,9 @@
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.layout.StackPane?>
 <?import javafx.scene.layout.VBox?>
-<?import javafx.scene.paint.Color?>
-<?import javafx.scene.paint.LinearGradient?>
-<?import javafx.scene.paint.Stop?>
 <?import javafx.scene.shape.Circle?>
 <?import javafx.scene.shape.Line?>
+<?import javafx.scene.shape.Rectangle?>
 
 <BorderPane fx:id="mainPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.a2022_3ahitnuhr_mfian_meder1_ikovacev_smedziko.PrimaryController">
     <left>
@@ -47,32 +45,16 @@
    <center>
        <StackPane prefHeight="150.0" prefWidth="200.0">
            <children>
-               <Circle radius="100.0" stroke="BLACK" strokeType="INSIDE">
-                   <fill>
-                       <LinearGradient endX="1.0" endY="1.0">
-                           <stops>
-                               <Stop>
-                                   <color>
-                                       <Color green="1.0" blue="0.9964028596878052" opacity="0.6800000071525574" />
-                                   </color>
-                               </Stop>
-                               <Stop offset="1.0">
-                                   <color>
-                                       <Color red="1.0" green="1.0" blue="1.0" />
-                                   </color>
-                               </Stop>
-                           </stops>
-                       </LinearGradient>
-                   </fill>
-               </Circle>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" height="410.0" stroke="BLACK" strokeType="INSIDE" width="93.0" />
+               <Circle fill="#58d4ed" radius="100.0" stroke="BLACK" strokeType="INSIDE" />
             <AnchorPane prefHeight="200.0" prefWidth="200.0">
                <children>
-                  <Line endX="190.5" endY="200.0" startX="190.5" startY="100.0" />
+                  <Line endX="259.55712890625" endY="285.06170654296875" rotate="-38.7" startX="120.0" startY="120.0" />
                </children>
             </AnchorPane>
             <AnchorPane prefHeight="200.0" prefWidth="200.0">
                <children>
-                  <Line endX="190.5" endY="102.5" startX="190.5" startY="200.2928924560547" />
+                  <Line endX="175.84422302246094" endY="148.0" rotate="134.4" smooth="false" startX="190.5" startY="259.0" strokeWidth="2.0" />
                </children>
             </AnchorPane>
            </children>
