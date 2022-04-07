@@ -22,13 +22,9 @@ public class Uhr {
         return degree;
     }
 
-    public Timestamp getCurrentTime() throws IOException {
-        setCurrentTime(new Timestamp(System.currentTimeMillis() - timezone.getTimezoneOffsetInSeconds()));
-        return CurrentTime;
-    }
 
     public void setCurrentTime(Timestamp currentTime) {
-        CurrentTime = currentTime;
+       CurrentTime = currentTime;
     }
 
     public Event[] getEvent() {
@@ -61,5 +57,13 @@ public class Uhr {
 
     public void setBilderFuerWetter(String[] bilderFuerWetter) {
         this.bilderFuerWetter = bilderFuerWetter;
+    }
+
+    /**
+     * gets New time from old and current System time
+     */
+    public void getNewTime(){
+        Long curerntTimeinLong= Long.getLong(CurrentTime.toString());
+        CurrentTime =new Timestamp(curerntTimeinLong + (System.currentTimeMillis() - curerntTimeinLong));
     }
 }
