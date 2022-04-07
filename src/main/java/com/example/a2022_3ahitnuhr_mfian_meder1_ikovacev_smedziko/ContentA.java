@@ -1,5 +1,6 @@
 package com.example.a2022_3ahitnuhr_mfian_meder1_ikovacev_smedziko;
 
+import View.ShowUhrDigital;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.layout.AnchorPane;
 
@@ -12,6 +13,7 @@ public class ContentA extends AnchorPane {
 
         fxmlLoader.setRoot(this);
         fxmlLoader.setController(this);
+
 
         try {
             fxmlLoader.load();

@@ -7,6 +7,7 @@ import java.io.IOException;
 import java.net.HttpURLConnection;
 import java.net.URL;
 import java.util.Scanner;
+import java.util.TimeZone;
 
 public class tempAndTimezone {
     String city;
@@ -32,6 +33,8 @@ public class tempAndTimezone {
         Example a = null;
         a = new Example();
         a = connectionToOpenWheater();
+
+        TimeZone tz = TimeZone.getDefault();
 
         timezoneOffset = a.getCity().getTimezone();
 
