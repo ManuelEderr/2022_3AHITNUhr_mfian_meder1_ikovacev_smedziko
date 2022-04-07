@@ -3,6 +3,7 @@ ___
 ### Arbeitsbericht:
 
 ##18.03.2022
+<i>Krank</i>
 ___
 ### Arbeitsbericht:
 
@@ -15,14 +16,18 @@ ___
 ### Arbeitsbericht:
 
 ##25.03.2022
+@Author: Kovacevic Ismael <br />
+@Geaenderte Dateien: Alle / <br />
+@Was geaendert wurde:<br /> <t />
+                     Neustrukturierung des Projekts, Logik der Binearen Uhr erdenken, bei digitaler Uhr 
 ___
 ###Arbeitsbericht:
 
-##07.04.2022 (Vormittagseinheit)
-___
-###Arbeitsbericht:
-
-##07.04.2022 (Nachmittagseinheit)
+##07.04.2022
+@Author: Kovacevic Ismael <br />
+@Geaenderte Dateien: ShowUhrBinary,ContentC,PrimaryController,ContentC.fxml, Uhr/ <br />
+@Was geaendert wurde:<br /> <t />
+                     Fertigtsellung der Logik, der binären Uhr, Thread zur Zeiterneuerung, Uhr Klasse ueberarbeitet,
 ___
 ###Arbeitsbericht:
 
