@@ -6,6 +6,9 @@ import javafx.scene.layout.AnchorPane;
 
 import java.io.IOException;
 
+/**
+ * Controller für Binaere Uhr
+ */
 public class ContentC extends AnchorPane {
 Uhr uhrForC;
 

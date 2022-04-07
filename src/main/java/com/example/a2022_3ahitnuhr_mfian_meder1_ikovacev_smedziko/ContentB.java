@@ -9,6 +9,9 @@ import javafx.scene.layout.AnchorPane;
 
 import java.io.IOException;
 
+/**
+ * Controller für digitale Uhr
+ */
 public class ContentB extends AnchorPane {
     @FXML
     Label digitalTime = new Label();
@@ -22,7 +25,6 @@ public class ContentB extends AnchorPane {
 
 
         this.uhr = uhr;
-        System.out.println(uhr.getCurrentTime());
 
         try {
             fxmlLoader.load();

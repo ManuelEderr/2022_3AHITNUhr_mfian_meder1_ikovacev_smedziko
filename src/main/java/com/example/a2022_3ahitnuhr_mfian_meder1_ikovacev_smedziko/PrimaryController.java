@@ -9,8 +9,13 @@ import javafx.scene.layout.BorderPane;
 
 import java.io.IOException;
 
+
+/**
+ * Controller spezifisch für zwei äußeren Panels
+ */
 public class PrimaryController {
-        public Label tempLabel;
+
+    public Label tempLabel;
     public Button timerBTN;
     public Button stoppuhrBTN;
     @FXML
@@ -38,11 +43,9 @@ public class PrimaryController {
 
 
     @FXML
-    public void onBtnAClick()  {
-             contentA = new ContentA();
-            mainPane.setCenter(contentA);
-
-
+    public void onBtnAClick() throws IOException {
+        contentA = new ContentA();
+        mainPane.setCenter(contentA);
     }
 
     @FXML

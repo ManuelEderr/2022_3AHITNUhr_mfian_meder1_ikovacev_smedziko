@@ -32,6 +32,6 @@ public class ShowUhrDigital implements ShowUhr{
 
     @Override
     public void showUhr() throws IOException {
-        digitalLabel.setText(uhr.getCurrentTime().toString());
+        //digitalLabel.setText();
     }
 }

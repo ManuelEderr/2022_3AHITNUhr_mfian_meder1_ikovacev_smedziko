@@ -14,22 +14,15 @@ import javafx.scene.layout.VBox;
 
 import java.io.IOException;
 
+
+/**
+ * Controller für die Settings
+ */
 public class ContentD extends AnchorPane {
-    public VBox WetterVBox;
-    public HBox UhrzeitHBox;
-    public HBox DatumHBox;
-    public Button DigitaleUhrSwitch;
-    public Button AnalogeUhrSwitch;
-    public Button StoppuhrSwitch;
-    public Button TimerSwitch;
-    public Button StartUhrSwitch;
-    public Button BinaereUhrSwitch;
     public Label tempLabel;
     public showEvent showEvent;
     public tempAndTimezone tempandtimezone= null;
-    public Label timezoneLabel;
-    @FXML
-    public Label teimzone;
+
     @FXML
     TextField cityTextField;
 
