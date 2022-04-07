@@ -3,9 +3,9 @@ package OpenWheaterMap;
 import com.google.gson.annotations.Expose;
 import com.google.gson.annotations.SerializedName;
 
-import javax.annotation.Generated;
+//import javax.annotation.Generated;
 
-@Generated("jsonschema2pojo")
+//@Generated("jsonschema2pojo")
 public class List {
 
     @SerializedName("dt")
