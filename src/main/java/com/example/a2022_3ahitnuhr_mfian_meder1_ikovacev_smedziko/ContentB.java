@@ -4,25 +4,32 @@ import Model.Uhr;
 import View.ShowUhrDigital;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
+import javafx.scene.Group;
+import javafx.scene.Scene;
 import javafx.scene.control.Label;
 import javafx.scene.layout.AnchorPane;
+import javafx.scene.paint.Color;
+import javafx.scene.text.Font;
 
 import java.io.IOException;
+import java.time.LocalDateTime;
+import java.time.format.DateTimeFormatter;
+import javafx.stage.Stage;
 
 public class ContentB extends AnchorPane {
-    @FXML
-    Label digitalTime = new Label();
     Uhr uhr;
 
-    public ContentB(Uhr uhr) throws IOException {
+    @FXML
+    private Label digitalTime;
+
+    @FXML
+    private Label digitalDate;
+
+    public ContentB(Uhr uhr){
         FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("ContentB.fxml"));
 
         fxmlLoader.setRoot(this);
         fxmlLoader.setController(this);
-
-
-        this.uhr = uhr;
-        System.out.println(uhr.getCurrentTime());
 
         try {
             fxmlLoader.load();
@@ -31,8 +38,12 @@ public class ContentB extends AnchorPane {
         }
 
 
+        this.uhr = uhr;
 
-        //ShowUhrDigital sud = new ShowUhrDigital(this.uhr, digitalTime);
+        DateTimeFormatter dtf = DateTimeFormatter.ofPattern("HH : mm : ss");
+        digitalTime.setText(dtf.format(LocalDateTime.now()));
+        DateTimeFormatter dtf2 = DateTimeFormatter.ofPattern("dd / MM / yyyy");
+        digitalDate.setText(dtf2.format(LocalDateTime.now()));
 
 
     }
