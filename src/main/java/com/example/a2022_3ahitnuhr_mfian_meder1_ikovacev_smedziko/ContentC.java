@@ -18,14 +18,48 @@ import java.util.Arrays;
  */
 public class ContentC extends AnchorPane {
 Uhr uhrForC;
-String time;
+long time;
 ShowUhrBinary showUhrBinary;
+
 @FXML
-    Circle hour8;
+    public Circle hour8;
+    @FXML
+    public Circle hour4;
+    @FXML
+    public Circle hour2;
+    @FXML
+    public Circle hour1;
+
+    @FXML
+    public Circle min32;
+    @FXML
+    public Circle min16;
+    @FXML
+    public Circle min8;
+    @FXML
+    public Circle min4;
+    @FXML
+    public  Circle min2;
+    @FXML
+    public Circle min1;
+
+    @FXML
+    public Circle sec32;
+    @FXML
+    public Circle sec16;
+    @FXML
+    public Circle sec8;
+    @FXML
+    public Circle sec4;
+    @FXML
+    public Circle sec2;
+    @FXML
+    public  Circle sec1;
+
 
     public ContentC(Uhr uhrToUse){
+        PrimaryController.BINACTIVE=true;
         uhrForC=uhrToUse;
-        showUhrBinary=new ShowUhrBinary();
         FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("ContentC.fxml"));
 
         fxmlLoader.setRoot(this);
@@ -39,12 +73,28 @@ ShowUhrBinary showUhrBinary;
     }
     @FXML
     public void initialize() {
-        //hour8.setFill(javafx.scene.paint.Color.RED);
-        time = (uhrForC.getCurrentTime().toString().split(" ")[1]);
-        String[] timeinHourMinSec=time.split(":");
-        showUhrBinary.upadte(timeinHourMinSec);
+        Circle[] circles = {hour8,hour4,hour2,hour1,min32,min16,min8,min4,min2,min1,sec32,sec16,sec8,sec4,sec2,sec1};
+        showUhrBinary=new ShowUhrBinary(circles);
+
+        Thread threadForUpdating = new Thread(new updateBinary());
+        threadForUpdating.start();
 
 
 
+            }
+    public class updateBinary implements Runnable  {
+
+        @Override
+        public void run() {
+            while (PrimaryController.BINACTIVE) {
+                time = (uhrForC.getCurrentTime());
+                showUhrBinary.upadte(time);
+                try {
+                    Thread.sleep(950);
+                } catch (InterruptedException e) {
+                    e.printStackTrace();
+                }
+            }
+        }
     }
 }
