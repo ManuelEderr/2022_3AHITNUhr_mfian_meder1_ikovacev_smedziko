@@ -1,20 +1,13 @@
 package com.example.a2022_3ahitnuhr_mfian_meder1_ikovacev_smedziko;
 
 import Model.Uhr;
-import View.ShowUhrDigital;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
-import javafx.scene.Group;
-import javafx.scene.Scene;
 import javafx.scene.control.Label;
 import javafx.scene.layout.AnchorPane;
-import javafx.scene.paint.Color;
-import javafx.scene.text.Font;
-
 import java.io.IOException;
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
-import javafx.stage.Stage;
 
 public class ContentB extends AnchorPane {
     Uhr uhr;
@@ -25,7 +18,8 @@ public class ContentB extends AnchorPane {
     @FXML
     private Label digitalDate;
 
-    public ContentB(Uhr uhr){
+
+    public ContentB(Uhr uhr) {
         FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("ContentB.fxml"));
 
         fxmlLoader.setRoot(this);
@@ -38,7 +32,9 @@ public class ContentB extends AnchorPane {
         }
 
 
+
         this.uhr = uhr;
+
 
         DateTimeFormatter dtf = DateTimeFormatter.ofPattern("HH : mm : ss");
         digitalTime.setText(dtf.format(LocalDateTime.now()));
@@ -47,4 +43,7 @@ public class ContentB extends AnchorPane {
 
 
     }
+
 }
+
+
