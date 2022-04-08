@@ -19,8 +19,8 @@ public class Uhr {
         CurrentTime=new Timestamp(System.currentTimeMillis());
     }
 
-    public Timestamp getCurrentTime() {
-        return CurrentTime;
+    public long getCurrentTime() {
+        return CurrentTime.getTime();
     }
 
     public int getDegree() {

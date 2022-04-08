@@ -1,30 +1,50 @@
 package View;
 
 import Model.Uhr;
+import javafx.scene.paint.Color;
+import javafx.scene.shape.Circle;
 
-public class ShowUhrBinary implements ShowUhr{
+import java.util.Calendar;
+import java.util.Date;
+import java.util.GregorianCalendar;
+
+public class ShowUhrBinary implements ShowUhr {
     String newTimeInBin;
     String oldTimeinBin;
+    Circle[] circles;
 
-    public ShowUhrBinary() {
-        newTimeInBin="";
-        oldTimeinBin="0000000000000000";
+    public ShowUhrBinary(Circle[] circlesToUse) {
+        newTimeInBin = "";
+        oldTimeinBin = "0000000000000000";
+        circles = circlesToUse;
     }
 
     @Override
     public void showUhr() {
-        for (int i = 0; i<16;i++){
-
+        for (int i = 0; i < 16; i++) {
+            if (oldTimeinBin.charAt(i) == '0') {
+                if (newTimeInBin.charAt(i) == '1') {
+                    circles[i].setFill(javafx.scene.paint.Color.RED);
+                }
+            }
+            else if(oldTimeinBin.charAt(i)== '1'){
+                if (newTimeInBin.charAt(i)=='0'){
+                    circles[i].setFill(Color.BLACK);
+                }
+            }
         }
-
-
-        oldTimeinBin=newTimeInBin;
+        oldTimeinBin = newTimeInBin;
     }
-    public void upadte(String[] newTime){
-        String hourInBin = Integer.toBinaryString(Integer.parseInt(newTime[0]));
-        String minInBin = Integer.toBinaryString(Integer.parseInt(newTime[1]));
-        String secInBin = Integer.toBinaryString(Integer.parseInt(newTime[2].substring(0,2)));
-        newTimeInBin = hourInBin+minInBin+secInBin;
+
+    public void upadte(long newTime) {
+        Date date = new Date(newTime);
+        Calendar calendar = GregorianCalendar.getInstance();
+        calendar.setTime(date);
+        newTimeInBin = String.format("%4s", Integer.toString(calendar.get(Calendar.HOUR_OF_DAY), 2)).replace(' ', '0');
+        newTimeInBin += String.format("%6s", Integer.toString(calendar.get(Calendar.MINUTE), 2)).replace(' ', '0');
+        newTimeInBin += String.format("%6s", Integer.toString(calendar.get(Calendar.SECOND), 2)).replace(' ', '0');
         showUhr();
     }
+
 }
+

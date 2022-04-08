@@ -15,13 +15,15 @@ import java.io.IOException;
  */
 public class PrimaryController {
 
+    public static boolean BINACTIVE = false;
+
     public Label tempLabel;
     public Button timerBTN;
     public Button stoppuhrBTN;
     @FXML
     BorderPane mainPane;
     @FXML
-            Label LabelForTesting;
+    Label LabelForTesting;
 
     Uhr uhr;
 
@@ -55,7 +57,7 @@ public class PrimaryController {
     }
 
     @FXML
-    public void onBtnCClick(){
+    public void onBtnCClick() {
         contentC = new ContentC(uhr);
         mainPane.setCenter(contentC);
     }
@@ -66,11 +68,11 @@ public class PrimaryController {
         mainPane.setCenter(contentD);
     }
 
-    public static class calculateNewTime implements Runnable{
+    public static class calculateNewTime implements Runnable {
         Uhr uhr;
         boolean abbruch;
 
-        calculateNewTime(Uhr uhrToUpdate){
+        calculateNewTime(Uhr uhrToUpdate) {
             uhr = uhrToUpdate;
             abbruch = false;
         }
@@ -88,11 +90,6 @@ public class PrimaryController {
             }
         }
     }
-
-
-
-
-
 
 
 }

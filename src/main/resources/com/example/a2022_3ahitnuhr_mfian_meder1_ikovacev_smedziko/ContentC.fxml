@@ -36,32 +36,32 @@
                   </HBox>
                   <HBox prefHeight="100.0" prefWidth="200.0">
                       <children>
-                          <Circle radius="25.0" stroke="BLACK" strokeType="INSIDE">
+                          <Circle fx:id="min32" radius="25.0" stroke="BLACK" strokeType="INSIDE">
                               <HBox.margin>
                                   <Insets left="45.0" top="20.0" />
                               </HBox.margin>
                           </Circle>
-                          <Circle radius="25.0" stroke="BLACK" strokeType="INSIDE">
+                          <Circle fx:id="min16" radius="25.0" stroke="BLACK" strokeType="INSIDE">
                               <HBox.margin>
                                   <Insets left="17.0" top="20.0" />
                               </HBox.margin>
                           </Circle>
-                          <Circle radius="25.0" stroke="BLACK" strokeType="INSIDE">
+                          <Circle fx:id="min8" radius="25.0" stroke="BLACK" strokeType="INSIDE">
                               <HBox.margin>
                                   <Insets left="17.0" top="20.0" />
                               </HBox.margin>
                           </Circle>
-                          <Circle radius="25.0" stroke="BLACK" strokeType="INSIDE">
+                          <Circle fx:id="min4" radius="25.0" stroke="BLACK" strokeType="INSIDE">
                               <HBox.margin>
                                   <Insets left="17.0" top="20.0" />
                               </HBox.margin>
                           </Circle>
-                          <Circle radius="25.0" stroke="BLACK" strokeType="INSIDE">
+                          <Circle fx:id="min2" radius="25.0" stroke="BLACK" strokeType="INSIDE">
                               <HBox.margin>
                                   <Insets left="17.0" top="20.0" />
                               </HBox.margin>
                           </Circle>
-                          <Circle radius="25.0" stroke="BLACK" strokeType="INSIDE">
+                          <Circle  fx:id="min1" radius="25.0" stroke="BLACK" strokeType="INSIDE">
                               <HBox.margin>
                                   <Insets left="17.0" top="20.0" />
                               </HBox.margin>
@@ -70,32 +70,32 @@
                   </HBox>
                   <HBox prefHeight="100.0" prefWidth="200.0">
                       <children>
-                          <Circle radius="25.0" stroke="BLACK" strokeType="INSIDE">
+                          <Circle fx:id="sec32" radius="25.0" stroke="BLACK" strokeType="INSIDE">
                               <HBox.margin>
                                   <Insets left="45.0" top="20.0" />
                               </HBox.margin>
                           </Circle>
-                          <Circle radius="25.0" stroke="BLACK" strokeType="INSIDE">
+                          <Circle fx:id="sec16" radius="25.0" stroke="BLACK" strokeType="INSIDE">
                               <HBox.margin>
                                   <Insets left="17.0" top="20.0" />
                               </HBox.margin>
                           </Circle>
-                          <Circle radius="25.0" stroke="BLACK" strokeType="INSIDE">
+                          <Circle fx:id="sec8" radius="25.0" stroke="BLACK" strokeType="INSIDE">
                               <HBox.margin>
                                   <Insets left="17.0" top="20.0" />
                               </HBox.margin>
                           </Circle>
-                          <Circle radius="25.0" stroke="BLACK" strokeType="INSIDE">
+                          <Circle fx:id="sec4" radius="25.0" stroke="BLACK" strokeType="INSIDE">
                               <HBox.margin>
                                   <Insets left="17.0" top="20.0" />
                               </HBox.margin>
                           </Circle>
-                          <Circle radius="25.0" stroke="BLACK" strokeType="INSIDE">
+                          <Circle fx:id="sec2" radius="25.0" stroke="BLACK" strokeType="INSIDE">
                               <HBox.margin>
                                   <Insets left="17.0" top="20.0" />
                               </HBox.margin>
                           </Circle>
-                          <Circle radius="25.0" stroke="BLACK" strokeType="INSIDE">
+                          <Circle fx:id="sec1" radius="25.0" stroke="BLACK" strokeType="INSIDE">
                               <HBox.margin>
                                   <Insets left="17.0" top="20.0" />
                               </HBox.margin>
