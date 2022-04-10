@@ -12,7 +12,7 @@ public class ShowUhrDigital implements ShowUhr{
     static Uhr uhr;
     Label digitalLabel;
 
-    public ShowUhrDigital(Uhr uhr, Label digitalLabel) {
+    public ShowUhrDigital(Uhr uhr, Label digitalTime, Label digitalLabel) {
         ShowUhrDigital.uhr = uhr;
         this.digitalLabel = digitalLabel;
     }

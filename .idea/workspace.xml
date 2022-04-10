@@ -5,11 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="bf76bf08-bf60-4e36-94d0-ca741ce9cdf2" name="Changes" comment="Added NewTime">
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/2022_3AHITNUhr_mfian_meder1_ikovacev_smedziko.iml" beforeDir="false" afterPath="$PROJECT_DIR$/2022_3AHITNUhr_mfian_meder1_ikovacev_smedziko.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/View/ShowUhrAnalog.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/View/ShowUhrAnalog.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/a2022_3ahitnuhr_mfian_meder1_ikovacev_smedziko/ContentA.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/a2022_3ahitnuhr_mfian_meder1_ikovacev_smedziko/ContentA.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/a2022_3ahitnuhr_mfian_meder1_ikovacev_smedziko/ContentA.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/a2022_3ahitnuhr_mfian_meder1_ikovacev_smedziko/ContentA.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/View/ShowUhrDigital.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/View/ShowUhrDigital.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/a2022_3ahitnuhr_mfian_meder1_ikovacev_smedziko/ContentB.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/a2022_3ahitnuhr_mfian_meder1_ikovacev_smedziko/ContentB.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/module-info.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/a2022_3ahitnuhr_mfian_meder1_ikovacev_smedziko/ContentB.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/a2022_3ahitnuhr_mfian_meder1_ikovacev_smedziko/ContentB.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,7 +56,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/resources/com/example/a2022_3ahitnuhr_mfian_meder1_ikovacev_smedziko/ContentA.fxml" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Downloads/gson-2.8.6.jar" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.15" />
@@ -125,6 +128,8 @@
       <workItem from="1649319523462" duration="4839000" />
       <workItem from="1649326332191" duration="2662000" />
       <workItem from="1649399084512" duration="4455000" />
+      <workItem from="1649536683884" duration="801000" />
+      <workItem from="1649591616678" duration="707000" />
     </task>
     <task id="LOCAL-00001" summary="hello-view.fxml">
       <created>1647589998025</created>
@@ -212,6 +217,7 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="hello-view.fxml" />

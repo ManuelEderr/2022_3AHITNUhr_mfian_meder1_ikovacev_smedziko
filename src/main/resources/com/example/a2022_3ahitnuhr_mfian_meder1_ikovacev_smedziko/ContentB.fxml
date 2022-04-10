@@ -6,7 +6,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<fx:root prefHeight="200.0" prefWidth="300.0" type="AnchorPane" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1">
+<fx:root prefHeight="200.0" prefWidth="300.0" type="AnchorPane" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1">
     <children>
         <ListView layoutX="50.0" layoutY="-26.0" prefHeight="200.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
         <Label fx:id="digitalTime" layoutX="22.0" prefHeight="98.0" prefWidth="278.0" text="HH : MM : SS" textAlignment="JUSTIFY">
@@ -21,7 +21,7 @@
                 <Insets left="40.0" />
             </padding>
             <font>
-                <Font size="35.0" />
+                <Font size="30.0" />
             </font></Label>
     </children>
 </fx:root>
