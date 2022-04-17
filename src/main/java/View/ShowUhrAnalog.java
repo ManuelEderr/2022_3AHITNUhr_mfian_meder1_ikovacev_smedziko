@@ -39,7 +39,7 @@ public class ShowUhrAnalog extends AnchorPane {
 
     public void showUhr() throws IOException {
 
-        long millis = uhr.getCurrentTime().getTime();
+        long millis = uhr.getCurrentTime();
         Calendar ca = new GregorianCalendar();
         ca.setTimeInMillis(millis);
 

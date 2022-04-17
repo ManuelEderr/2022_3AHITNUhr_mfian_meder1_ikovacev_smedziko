@@ -90,7 +90,7 @@ ShowUhrBinary showUhrBinary;
                 time = (uhrForC.getCurrentTime());
                 showUhrBinary.upadte(time);
                 try {
-                    Thread.sleep(950);
+                    Thread.sleep(900);
                 } catch (InterruptedException e) {
                     e.printStackTrace();
                 }

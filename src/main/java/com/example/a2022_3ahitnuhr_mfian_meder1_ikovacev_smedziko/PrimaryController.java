@@ -16,6 +16,7 @@ import java.io.IOException;
 public class PrimaryController {
 
     public static boolean BINACTIVE = false;
+    public static boolean DIGACTIVE = false;
 
     public Label tempLabel;
     public Button timerBTN;
@@ -48,24 +49,32 @@ public class PrimaryController {
     public void onBtnAClick() throws IOException {
         contentA = new ContentA();
         mainPane.setCenter(contentA);
+        BINACTIVE=false;
+        DIGACTIVE=false;
     }
 
     @FXML
     public void onBtnBClick() throws IOException {
         contentB = new ContentB(uhr);
         mainPane.setCenter(contentB);
+        BINACTIVE=false;
+        DIGACTIVE=true;
     }
 
     @FXML
     public void onBtnCClick() {
         contentC = new ContentC(uhr);
         mainPane.setCenter(contentC);
+        BINACTIVE=true;
+        DIGACTIVE=false;
     }
 
     @FXML
     public void onBtnDClick() throws IOException {
         contentD = new ContentD(tempLabel);
         mainPane.setCenter(contentD);
+        BINACTIVE=false;
+        DIGACTIVE=false;
     }
 
     public static class calculateNewTime implements Runnable {
@@ -82,7 +91,7 @@ public class PrimaryController {
             while (!abbruch) {
                 uhr.NewTime();
                 try {
-                    Thread.sleep(1000);
+                    Thread.sleep(900);
                 } catch (InterruptedException e) {
                     e.printStackTrace();
                 }
