@@ -1,13 +1,19 @@
 package com.example.a2022_3ahitnuhr_mfian_meder1_ikovacev_smedziko;
 
 import Model.Uhr;
+import javafx.application.Platform;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
-import javafx.scene.control.Button;
-import javafx.scene.control.Label;
+import javafx.geometry.Insets;
+import javafx.scene.Node;
+import javafx.scene.control.*;
 import javafx.scene.layout.BorderPane;
+import javafx.scene.layout.GridPane;
+import javafx.scene.layout.VBox;
+import javafx.util.Pair;
 
 import java.io.IOException;
+import java.util.Optional;
 
 
 /**
@@ -17,6 +23,7 @@ public class PrimaryController {
 
     public static boolean BINACTIVE = false;
     public static boolean DIGACTIVE = false;
+    public static boolean ANAACTIVE = false;
 
     public Label tempLabel;
     public Button timerBTN;
@@ -47,10 +54,11 @@ public class PrimaryController {
 
     @FXML
     public void onBtnAClick() throws IOException {
-        contentA = new ContentA();
+        contentA = new ContentA(uhr);
         mainPane.setCenter(contentA);
         BINACTIVE=false;
         DIGACTIVE=false;
+        ANAACTIVE=true;
     }
 
     @FXML
@@ -59,6 +67,7 @@ public class PrimaryController {
         mainPane.setCenter(contentB);
         BINACTIVE=false;
         DIGACTIVE=true;
+        ANAACTIVE=false;
     }
 
     @FXML
@@ -67,6 +76,7 @@ public class PrimaryController {
         mainPane.setCenter(contentC);
         BINACTIVE=true;
         DIGACTIVE=false;
+        ANAACTIVE=false;
     }
 
     @FXML
@@ -75,7 +85,26 @@ public class PrimaryController {
         mainPane.setCenter(contentD);
         BINACTIVE=false;
         DIGACTIVE=false;
+        ANAACTIVE=false;
     }
+
+    public void onTimerBTNclick(ActionEvent actionEvent) {
+        Dialog<String> dialog = new Dialog<>();
+        dialog.setTitle("Timer");
+
+        VBox vBox = new VBox();
+
+        Label timer = new Label(Long.toString(uhr.getCurrentTime()));
+
+
+        vBox.getChildren().addAll(new Label("Timer"), timer, new Button());
+
+
+        dialog.getDialogPane().setContent(vBox);
+        dialog.showAndWait();
+        System.out.println(dialog.isShowing());
+    }
+
 
     public static class calculateNewTime implements Runnable {
         Uhr uhr;
