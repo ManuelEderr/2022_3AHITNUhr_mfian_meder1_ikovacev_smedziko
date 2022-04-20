@@ -14,6 +14,7 @@ import java.io.IOException;
  */
 public class PrimaryController {
 
+    public static  boolean ANAACTIVE = false;
     public static boolean BINACTIVE = false;
     public static boolean DIGACTIVE = false;
 
@@ -46,10 +47,11 @@ public class PrimaryController {
 
     @FXML
     public void onBtnAClick() throws IOException {
-        contentA = new ContentA();
+        contentA = new ContentA(uhr);
         mainPane.setCenter(contentA);
         BINACTIVE=false;
         DIGACTIVE=false;
+        ANAACTIVE=true;
     }
 
     @FXML
