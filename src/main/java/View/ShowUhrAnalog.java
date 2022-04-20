@@ -1,6 +1,7 @@
 package View;
 
 import Model.Uhr;
+import javafx.application.Platform;
 import javafx.fxml.FXML;
 import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.StackPane;
@@ -10,6 +11,7 @@ import javafx.scene.shape.Line;
 
 import java.io.IOException;
 import java.util.Calendar;
+import java.util.Date;
 import java.util.GregorianCalendar;
 
 
@@ -26,6 +28,9 @@ public class ShowUhrAnalog extends AnchorPane {
 
     StackPane sp;
 
+    int hour;
+    int minute;
+    int second;
 
 
     public ShowUhrAnalog(Uhr uhr, Circle c, Line minutesLine, Line hourLine, Line secondLine, StackPane sp) {
@@ -39,77 +44,73 @@ public class ShowUhrAnalog extends AnchorPane {
 
     public void showUhr() throws IOException {
 
-        long millis = uhr.getCurrentTime();
-        Calendar ca = new GregorianCalendar();
-        ca.setTimeInMillis(millis);
-
-        int hour = ca.get(Calendar.HOUR);
-        int minute = ca.get(Calendar.MINUTE);
-        int second = ca.get(Calendar.SECOND);
+        double clockRadius = Math.min(sp.getWidth(), sp.getHeight()) * 0.8 * 0.5;
+        double centerX = sp.getWidth() / 2;
+        double centerY = sp.getHeight() / 2;
 
 
-        double clockRadius = clockCircle.getRadius();
-        double centerX = 150;
-        double centerY = 111;
 
 
-        /*
-        //Minutenzeiger
-        double mLength = clockRadius * 0.65;
-        double xMinute = centerX + mLength
-                * Math.sin(minute * (2 * Math.PI / 60));
-        double minuteY = centerY - mLength
-                * Math.cos(minute * (2 * Math.PI / 60));
-        minutesLine = new Line(centerX, centerY, xMinute, minuteY);
-        minutesLine.setStroke(Color.BLUE);
 
-        //Stundenzeiger
-        double hLength = clockRadius * 0.5;
-        double a = (hour % 12 + minute / 60.0) * (2 * Math.PI / 12);
-        double hourX = centerX + hLength
-                * Math.sin(a);
-        double hourY = centerY - hLength
-                * Math.cos(a);
-        hourLine = new Line(centerX, centerY, hourX, hourY);
-        hourLine.setStroke(Color.GREEN);
+        clockCircle = new Circle(centerX, centerY, clockRadius);
+        clockCircle.setFill(Color.WHITE);
+        clockCircle.setStroke(Color.BLACK);
 
-         */
-
-        // Draw second hand
-        double sLength = (clockRadius * 1.70);
-        double xSecond = centerX + sLength
-                * Math.sin(second * (2 * Math.PI / 60));
-        double secondY = centerY - sLength
-                * Math.cos(second * (2 * Math.PI / 60));
-        secondLine = new Line(centerX, centerY, xSecond, secondY);
+        //Sekundenzeiger
+        double sLength = (clockRadius * 0.95);
+        double xSecond = centerX + sLength * Math.sin(second * (2 * Math.PI / 60));
+        double ySecond = centerY - sLength * Math.cos(second * (2 * Math.PI / 60));
+        secondLine = new Line(centerX, centerY, xSecond, ySecond);
         secondLine.setStroke(Color.BLACK);
         secondLine.setStrokeWidth(5);
 
-        // Draw minute hand
-        double mLength = (clockRadius * 1.95);
-        double xMinute = centerX + mLength
-                * Math.sin(minute * (2 * Math.PI / 60));
-        double minuteY = centerY - mLength
-                * Math.cos(minute * (2 * Math.PI / 60));
-        minutesLine = new Line(centerX, centerY, xMinute, minuteY);
+        //Minutenzeiger
+        double mLength = clockRadius * 0.8;
+        double xMinute = centerX + mLength * Math.sin(minute * (2 * Math.PI / 60));
+        double yMinute = centerY - mLength * Math.cos(minute * (2 * Math.PI / 60));
+        minutesLine = new Line(centerX, centerY, xMinute, yMinute);
         minutesLine.setStroke(Color.BLUE);
         minutesLine.setStrokeWidth(5);
 
         minutesLine.getCursor();
 
-
-        // Draw hour hand
-        double hLength = clockRadius * 1.5;
+        //Stundenzeiger
+        double hLength = clockRadius * 0.5;
         double a = (hour % 12 + minute / 60.0) * (2 * Math.PI / 12);
-        double hourX = centerX + hLength * Math.sin(a);
-        double hourY = centerY - hLength * Math.cos(a);
-        hourLine = new Line(centerX, centerY, hourX, hourY);
+        double xHour = centerX + hLength * Math.sin(a);
+        double yHour = centerY - hLength * Math.cos(a);
+        hourLine = new Line(centerX, centerY, xHour, yHour);
         hourLine.setStroke(Color.GREEN);
         hourLine.setStrokeWidth(5);
 
 
 
-        sp.getChildren().clear();
-        sp.getChildren().addAll(minutesLine, hourLine, secondLine, clockCircle);
+        Platform.runLater(new Runnable() {
+            @Override
+            public void run() {
+                sp.getChildren().clear();
+                sp.getChildren().addAll(clockCircle, hourLine, minutesLine, secondLine);
+            }
+        });
+
+
+
+    }
+
+
+    public void upadte(Uhr uhr) throws IOException {
+        this.uhr = uhr;
+
+        long millis = uhr.getCurrentTime();
+        Calendar ca = new GregorianCalendar();
+        ca.setTimeInMillis(millis);
+
+        hour = ca.get(Calendar.HOUR);
+        minute = ca.get(Calendar.MINUTE);
+        second = ca.get(Calendar.SECOND);
+
+
+
+        showUhr();
     }
 }

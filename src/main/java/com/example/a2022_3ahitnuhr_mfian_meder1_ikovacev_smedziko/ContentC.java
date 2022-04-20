@@ -5,8 +5,13 @@ import View.ShowUhrBinary;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.layout.AnchorPane;
+import javafx.scene.paint.Color;
 import javafx.scene.shape.Circle;
+
 import java.io.IOException;
+import java.sql.Timestamp;
+import java.text.SimpleDateFormat;
+import java.util.Arrays;
 
 /**
  * Controller für Binaere Uhr
@@ -16,8 +21,6 @@ Uhr uhrForC;
 long time;
 ShowUhrBinary showUhrBinary;
 
- @FXML
- public Circle hour16;
 @FXML
     public Circle hour8;
     @FXML
@@ -70,7 +73,7 @@ ShowUhrBinary showUhrBinary;
     }
     @FXML
     public void initialize() {
-        Circle[] circles = {hour16,hour8,hour4,hour2,hour1,min32,min16,min8,min4,min2,min1,sec32,sec16,sec8,sec4,sec2,sec1};
+        Circle[] circles = {hour8,hour4,hour2,hour1,min32,min16,min8,min4,min2,min1,sec32,sec16,sec8,sec4,sec2,sec1};
         showUhrBinary=new ShowUhrBinary(circles);
 
         Thread threadForUpdating = new Thread(new updateBinary());
