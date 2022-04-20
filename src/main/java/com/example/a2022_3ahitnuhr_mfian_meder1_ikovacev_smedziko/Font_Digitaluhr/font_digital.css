@@ -1,7 +1,0 @@
-@font-face {
-    font-family: 'DigitalUhr';
-    src: url("DS-DIGI.TTF");
-}
-.digitalFont{
-    -fx-font-family: "DigitalUhr";
-}

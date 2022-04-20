@@ -1,20 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.shape.Circle?>
 
-<fx:root prefHeight="292.0" prefWidth="382.0" type="AnchorPane" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1">
+<fx:root prefHeight="332.0" prefWidth="515.0" type="AnchorPane" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1">
     <children>
-          <VBox layoutY="3.0" prefHeight="290.0" prefWidth="434.0">
+          <VBox layoutY="3.0" prefHeight="332.0" prefWidth="515.0">
               <children>
-                  <HBox prefHeight="100.0" prefWidth="200.0">
+                  <HBox prefHeight="99.0" prefWidth="450.0">
                       <children>
+                  <Label prefHeight="17.0" prefWidth="72.0" text="Hours:">
+                     <HBox.margin>
+                        <Insets top="45.0" />
+                     </HBox.margin>
+                  </Label>
+                  <Circle fx:id="hour16" radius="30.0" stroke="BLACK" strokeType="INSIDE">
+                     <HBox.margin>
+                        <Insets left="30.0" top="20.0" />
+                     </HBox.margin>
+                  </Circle>
                           <Circle fx:id="hour8" radius="30.0" stroke="BLACK" strokeType="INSIDE">
                               <HBox.margin>
-                                  <Insets left="50.0" top="20.0" />
+                                  <Insets left="25.0" top="20.0" />
                               </HBox.margin>
                           </Circle>
                           <Circle fx:id="hour4" radius="30.0" stroke="BLACK" strokeType="INSIDE">
@@ -34,8 +45,13 @@
                           </Circle>
                       </children>
                   </HBox>
-                  <HBox prefHeight="100.0" prefWidth="200.0">
+                  <HBox prefHeight="92.0" prefWidth="515.0">
                       <children>
+                  <Label prefHeight="17.0" prefWidth="61.0" text="Minutes:">
+                     <HBox.margin>
+                        <Insets top="45.0" />
+                     </HBox.margin>
+                  </Label>
                           <Circle fx:id="min32" radius="25.0" stroke="BLACK" strokeType="INSIDE">
                               <HBox.margin>
                                   <Insets left="45.0" top="20.0" />
@@ -61,15 +77,20 @@
                                   <Insets left="17.0" top="20.0" />
                               </HBox.margin>
                           </Circle>
-                          <Circle  fx:id="min1" radius="25.0" stroke="BLACK" strokeType="INSIDE">
+                          <Circle fx:id="min1" radius="25.0" stroke="BLACK" strokeType="INSIDE">
                               <HBox.margin>
                                   <Insets left="17.0" top="20.0" />
                               </HBox.margin>
                           </Circle>
                       </children>
                   </HBox>
-                  <HBox prefHeight="100.0" prefWidth="200.0">
+                  <HBox prefHeight="98.0" prefWidth="515.0">
                       <children>
+                  <Label prefHeight="17.0" prefWidth="63.0" text="Seconds:">
+                     <HBox.margin>
+                        <Insets top="45.0" />
+                     </HBox.margin>
+                  </Label>
                           <Circle fx:id="sec32" radius="25.0" stroke="BLACK" strokeType="INSIDE">
                               <HBox.margin>
                                   <Insets left="45.0" top="20.0" />

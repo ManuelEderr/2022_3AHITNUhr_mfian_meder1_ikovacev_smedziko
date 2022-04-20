@@ -5,12 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="bf76bf08-bf60-4e36-94d0-ca741ce9cdf2" name="Changes" comment="Added NewTime">
+      <change afterPath="$PROJECT_DIR$/src/main/java/View/ShowTimer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/a2022_3ahitnuhr_mfian_meder1_ikovacev_smedziko/TimerContent.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/a2022_3ahitnuhr_mfian_meder1_ikovacev_smedziko/TimerContent.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/2022_3AHITNUhr_mfian_meder1_ikovacev_smedziko.iml" beforeDir="false" afterPath="$PROJECT_DIR$/2022_3AHITNUhr_mfian_meder1_ikovacev_smedziko.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/View/ShowUhrAnalog.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/View/ShowUhrAnalog.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/View/ShowUhrBinary.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/View/ShowUhrBinary.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/a2022_3ahitnuhr_mfian_meder1_ikovacev_smedziko/ContentC.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/a2022_3ahitnuhr_mfian_meder1_ikovacev_smedziko/ContentC.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/a2022_3ahitnuhr_mfian_meder1_ikovacev_smedziko/Font_Digitaluhr/font_digital.css" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/a2022_3ahitnuhr_mfian_meder1_ikovacev_smedziko/PrimaryController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/a2022_3ahitnuhr_mfian_meder1_ikovacev_smedziko/PrimaryController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/module-info.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/a2022_3ahitnuhr_mfian_meder1_ikovacev_smedziko/ContentC.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/a2022_3ahitnuhr_mfian_meder1_ikovacev_smedziko/ContentC.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/a2022_3ahitnuhr_mfian_meder1_ikovacev_smedziko/primary.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/a2022_3ahitnuhr_mfian_meder1_ikovacev_smedziko/primary.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -21,8 +25,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="CSS File" />
-        <option value="Class" />
         <option value="FxmlFile" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -129,7 +133,11 @@
       <workItem from="1649536683884" duration="801000" />
       <workItem from="1649591616678" duration="707000" />
       <workItem from="1649620524664" duration="889000" />
-      <workItem from="1650212206928" duration="304000" />
+      <workItem from="1650212206928" duration="1369000" />
+      <workItem from="1650272226677" duration="1722000" />
+      <workItem from="1650274010288" duration="1193000" />
+      <workItem from="1650396631853" duration="1579000" />
+      <workItem from="1650484987413" duration="8386000" />
     </task>
     <task id="LOCAL-00001" summary="hello-view.fxml">
       <created>1647589998025</created>
@@ -201,7 +209,14 @@
       <option name="project" value="LOCAL" />
       <updated>1649322389158</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Added NewTime">
+      <created>1650212520780</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1650212520780</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -228,5 +243,16 @@
     <MESSAGE value="GSon" />
     <MESSAGE value="Added NewTime" />
     <option name="LAST_COMMIT_MESSAGE" value="Added NewTime" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/example/a2022_3ahitnuhr_mfian_meder1_ikovacev_smedziko/TimerContent.java</url>
+          <line>106</line>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

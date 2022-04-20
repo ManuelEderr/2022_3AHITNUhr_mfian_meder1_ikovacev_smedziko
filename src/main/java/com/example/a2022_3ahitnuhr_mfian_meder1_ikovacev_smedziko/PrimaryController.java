@@ -1,7 +1,6 @@
 package com.example.a2022_3ahitnuhr_mfian_meder1_ikovacev_smedziko;
 
 import Model.Uhr;
-import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
@@ -19,7 +18,6 @@ public class PrimaryController {
     public static boolean DIGACTIVE = false;
 
     public Label tempLabel;
-    public Button timerBTN;
     public Button stoppuhrBTN;
     @FXML
     BorderPane mainPane;
@@ -33,6 +31,7 @@ public class PrimaryController {
     ContentB contentB;
     ContentC contentC;
     ContentD contentD;
+    TimerContent timerContent;
 
 
     @FXML
@@ -75,6 +74,14 @@ public class PrimaryController {
         mainPane.setCenter(contentD);
         BINACTIVE=false;
         DIGACTIVE=false;
+    }
+    @FXML
+    public void onTimerClick(){
+        timerContent=new TimerContent();
+        mainPane.setCenter(timerContent);
+        BINACTIVE=false;
+        DIGACTIVE=false;
+
     }
 
     public static class calculateNewTime implements Runnable {
