@@ -1,6 +1,7 @@
 package com.example.a2022_3ahitnuhr_mfian_meder1_ikovacev_smedziko;
 
 
+import Model.MusicPlayer;
 import View.ShowTimer;
 import javafx.application.Platform;
 import javafx.fxml.FXML;
@@ -20,17 +21,14 @@ public class TimerContent extends AnchorPane {
     Thread t1;
     boolean stop;
     boolean abbruch;
+    MusicPlayer musicPlayer;
     ShowTimer showTimer;
     @FXML
     VBox VboxForTimer;
     @FXML
     VBox VboxForSetting;
     @FXML
-    ProgressBar ProgressbarH;
-    @FXML
-    ProgressBar ProgressbarM;
-    @FXML
-    ProgressBar ProgressbarS;
+    ProgressBar ProgressBar;
     @FXML
     TextField fieldHour;
     @FXML
@@ -62,18 +60,20 @@ public class TimerContent extends AnchorPane {
 
     @FXML
     public void initialize() {
+        musicPlayer=new MusicPlayer();
         VboxForTimer.setVisible(false);
-        showTimer=new ShowTimer(new Label[]{LabelForH, LabelForM, LabelForS}, new ProgressBar[]{ProgressbarH,ProgressbarM,ProgressbarS});
+        showTimer=new ShowTimer(new Label[]{LabelForH, LabelForM, LabelForS},ProgressBar);
 
     }
 @FXML
     public void StartStop(){
-
-    stop=true;
+    stop=!stop;
     }
     @FXML
     public void StartNewTimer(){
-
+        abbruch=true;
+    VboxForTimer.setVisible(false);
+    VboxForSetting.setVisible(true);
     }
     @FXML
     public void StartTimer(){
@@ -95,7 +95,7 @@ public class TimerContent extends AnchorPane {
 
         @Override
         public void run() {
-
+            showTimer.initzializeValues(length);
             while (!abbruch && length > 0){
                 if (!stop){
                     Platform.runLater(new Runnable() {
@@ -113,7 +113,8 @@ public class TimerContent extends AnchorPane {
                     e.printStackTrace();
                 }
             }
-
+            System.out.println("Succesfully ended");
+            musicPlayer.playFile("com/example/a2022_3ahitnuhr_mfian_meder1_ikovacev_smedziko/HE.mp3");
         }
     }
 }

@@ -17,6 +17,7 @@ import java.util.Objects;
     @Override
     public void start(Stage primaryStage) {
         try {
+
             root = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("primary.fxml")));
             stage = primaryStage;
             stage.setTitle("Stage");

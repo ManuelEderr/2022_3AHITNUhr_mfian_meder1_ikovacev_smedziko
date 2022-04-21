@@ -5,6 +5,8 @@ import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.layout.BorderPane;
+import javafx.scene.layout.VBox;
+
 
 import java.io.IOException;
 
@@ -20,6 +22,7 @@ public class PrimaryController {
 
     public Label tempLabel;
     public Button stoppuhrBTN;
+    public VBox vBoxForEvents;
     @FXML
     BorderPane mainPane;
     @FXML
@@ -41,6 +44,7 @@ public class PrimaryController {
         uhr = new Uhr("AT");
         Thread updateTimeThread = new Thread(new calculateNewTime(uhr));
         updateTimeThread.start();
+
 
     }
 
@@ -72,14 +76,16 @@ public class PrimaryController {
 
     @FXML
     public void onBtnDClick() throws IOException {
-        contentD = new ContentD(tempLabel);
+         contentD = new ContentD(tempLabel);
         mainPane.setCenter(contentD);
         BINACTIVE=false;
         DIGACTIVE=false;
     }
     @FXML
     public void onTimerClick(){
-        timerContent=new TimerContent();
+        if (timerContent == null) {
+            timerContent = new TimerContent();
+        }
         mainPane.setCenter(timerContent);
         BINACTIVE=false;
         DIGACTIVE=false;

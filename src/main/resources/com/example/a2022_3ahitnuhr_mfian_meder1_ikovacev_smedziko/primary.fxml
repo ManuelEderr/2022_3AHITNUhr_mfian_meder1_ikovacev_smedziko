@@ -7,7 +7,7 @@
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.layout.VBox?>
 
-<BorderPane fx:id="mainPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.a2022_3ahitnuhr_mfian_meder1_ikovacev_smedziko.PrimaryController">
+<BorderPane fx:id="mainPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.a2022_3ahitnuhr_mfian_meder1_ikovacev_smedziko.PrimaryController">
    <left>
       <ToolBar orientation="VERTICAL" BorderPane.alignment="CENTER">
          <items>
@@ -20,11 +20,7 @@
    </left>
    <right>
       <VBox prefHeight="400.0" prefWidth="129.0">
-         <VBox>
-            <children>
-               <Label text="Events">Test</Label>
-            </children>
-         </VBox>
+         <VBox />
          <HBox prefHeight="28.0" prefWidth="129.0">
             <children>
                <Label text="Temperatur: " />
@@ -33,6 +29,8 @@
          </HBox>
          <Button mnemonicParsing="false" onAction="#onTimerClick" text="Timer" />
          <Button fx:id="stoppuhrBTN" mnemonicParsing="false" text="Stoppuhr" />
+         <Button mnemonicParsing="false" text="add Event" />
+         <VBox fx:id="vBoxForEvents" alignment="CENTER" prefHeight="298.0" prefWidth="118.0" />
       </VBox>
    </right>
    <center>

@@ -22,6 +22,8 @@ long time;
 ShowUhrBinary showUhrBinary;
 
 @FXML
+public Circle hour16;
+@FXML
     public Circle hour8;
     @FXML
     public Circle hour4;
@@ -73,7 +75,7 @@ ShowUhrBinary showUhrBinary;
     }
     @FXML
     public void initialize() {
-        Circle[] circles = {hour8,hour4,hour2,hour1,min32,min16,min8,min4,min2,min1,sec32,sec16,sec8,sec4,sec2,sec1};
+        Circle[] circles = {hour16,hour8,hour4,hour2,hour1,min32,min16,min8,min4,min2,min1,sec32,sec16,sec8,sec4,sec2,sec1};
         showUhrBinary=new ShowUhrBinary(circles);
 
         Thread threadForUpdating = new Thread(new updateBinary());

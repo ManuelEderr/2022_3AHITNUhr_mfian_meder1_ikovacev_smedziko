@@ -15,7 +15,7 @@
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
-      <module name="2022_3AHITNUhr_mfian_meder1_ikovacev_smedziko" options="" />
+      <module name="2022_3AHITNUhr_mfian_meder1_ikovacev_smedziko" options="--add-exports com.google.gson/com.google.gson.internal.bind.util=com.example.a2022_3ahitnuhr_mfian_meder1_ikovacev_smedziko" />
     </option>
   </component>
 </project>

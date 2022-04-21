@@ -9,8 +9,9 @@
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.layout.StackPane?>
 <?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
 
-<fx:root prefHeight="400.0" prefWidth="600.0" type="AnchorPane" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1">
+<fx:root prefHeight="400.0" prefWidth="600.0" type="AnchorPane" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1">
    <children>
       <StackPane layoutX="19.0" layoutY="19.0">
          <children>
@@ -66,7 +67,7 @@
             </VBox>
             <VBox fx:id="VboxForTimer" prefHeight="362.0" prefWidth="560.0">
                <children>
-                  <HBox prefHeight="253.0" prefWidth="560.0">
+                  <HBox prefHeight="221.0" prefWidth="560.0">
                      <children>
                         <VBox prefHeight="253.0" prefWidth="187.0">
                            <children>
@@ -74,15 +75,10 @@
                                  <VBox.margin>
                                     <Insets top="60.0" />
                                  </VBox.margin>
+                                 <font>
+                                    <Font size="20.0" />
+                                 </font>
                               </Label>
-                              <ProgressBar fx:id="ProgressbarH" prefHeight="18.0" prefWidth="170.0" progress="0.0">
-                                 <opaqueInsets>
-                                    <Insets />
-                                 </opaqueInsets>
-                                 <VBox.margin>
-                                    <Insets left="10.0" />
-                                 </VBox.margin>
-                              </ProgressBar>
                            </children>
                         </VBox>
                         <VBox prefHeight="253.0" prefWidth="187.0">
@@ -91,15 +87,10 @@
                                  <VBox.margin>
                                     <Insets top="60.0" />
                                  </VBox.margin>
+                                 <font>
+                                    <Font size="20.0" />
+                                 </font>
                               </Label>
-                              <ProgressBar fx:id="ProgressbarM" prefHeight="18.0" prefWidth="170.0" progress="0.0">
-                                 <opaqueInsets>
-                                    <Insets />
-                                 </opaqueInsets>
-                                 <VBox.margin>
-                                    <Insets left="10.0" />
-                                 </VBox.margin>
-                              </ProgressBar>
                            </children>
                         </VBox>
                         <VBox prefHeight="253.0" prefWidth="187.0">
@@ -108,22 +99,29 @@
                                  <VBox.margin>
                                     <Insets top="60.0" />
                                  </VBox.margin>
+                                 <font>
+                                    <Font size="20.0" />
+                                 </font>
                               </Label>
-                              <ProgressBar fx:id="ProgressbarS" prefHeight="18.0" prefWidth="170.0" progress="0.0">
-                                 <opaqueInsets>
-                                    <Insets />
-                                 </opaqueInsets>
-                                 <VBox.margin>
-                                    <Insets left="10.0" />
-                                 </VBox.margin>
-                              </ProgressBar>
                            </children>
                         </VBox>
                      </children>
                   </HBox>
-                  <HBox alignment="CENTER" prefHeight="175.0" prefWidth="560.0">
+                  <VBox alignment="CENTER" prefHeight="35.0" prefWidth="550.0">
+                     <VBox.margin>
+                        <Insets left="10.0" />
+                     </VBox.margin>
                      <children>
-                        <Button mnemonicParsing="false" onAction="#StartStop" text="Stop" />
+                        <ProgressBar fx:id="ProgressBar" prefHeight="20.0" prefWidth="534.0" progress="0.0">
+                           <opaqueInsets>
+                              <Insets />
+                           </opaqueInsets>
+                        </ProgressBar>
+                     </children>
+                  </VBox>
+                  <HBox alignment="CENTER" prefHeight="98.0" prefWidth="560.0">
+                     <children>
+                        <Button mnemonicParsing="false" onAction="#StartStop" text="Stop/Start" />
                         <Button mnemonicParsing="false" onAction="#StartNewTimer" text="New" />
                      </children>
                   </HBox>
