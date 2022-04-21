@@ -17,13 +17,16 @@ import java.util.Arrays;
  * Controller für Binaere Uhr
  */
 public class ContentC extends AnchorPane {
-Uhr uhrForC;
-long time;
-ShowUhrBinary showUhrBinary;
-
-@FXML
-public Circle hour16;
-@FXML
+    Uhr uhrForC;
+    long time;
+    ShowUhrBinary showUhrBinary;
+    /**
+     * einzelne Kreise für die Binäre Uhr
+     * werden erstellt
+     */
+    @FXML
+    public Circle hour16;
+    @FXML
     public Circle hour8;
     @FXML
     public Circle hour4;
@@ -58,7 +61,9 @@ public Circle hour16;
     @FXML
     public  Circle sec1;
 
-
+    /**
+     * Die FXML-Datei wird im Controller geladen und ausgegeben.
+     */
     public ContentC(Uhr uhrToUse){
         PrimaryController.BINACTIVE=true;
         uhrForC=uhrToUse;
@@ -74,6 +79,9 @@ public Circle hour16;
         }
     }
     @FXML
+    /**
+     * Kreise werden initialisiert, Thread zum automatischen Updaten wird erstellt.
+     */
     public void initialize() {
         Circle[] circles = {hour16,hour8,hour4,hour2,hour1,min32,min16,min8,min4,min2,min1,sec32,sec16,sec8,sec4,sec2,sec1};
         showUhrBinary=new ShowUhrBinary(circles);
@@ -84,6 +92,9 @@ public Circle hour16;
 
 
             }
+    /**
+     * Automatische Aktualisierung der Aktuellen Zeit
+     */
     public class updateBinary implements Runnable  {
 
         @Override

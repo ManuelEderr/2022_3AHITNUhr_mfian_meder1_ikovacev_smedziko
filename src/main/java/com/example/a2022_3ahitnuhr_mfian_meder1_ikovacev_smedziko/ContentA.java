@@ -44,6 +44,9 @@ public class ContentA extends AnchorPane {
     Uhr uhrForA;
     ShowUhrAnalog a;
 
+    /**
+     * Die FXML-Datei wird im Controller geladen und ausgegeben.
+     */
     public ContentA(Uhr uhr) throws IOException {
         PrimaryController.ANAACTIVE = true;
         uhrForA = uhr;
@@ -60,21 +63,19 @@ public class ContentA extends AnchorPane {
         }
     }
 
-
+    /**
+     * Uhr wird initialisiert, Thread zum automatischen Updaten wird erstellt.
+     */
     @FXML
     public void initialize() {
-/*
-        Circle[] circles = {hour8, hour4, hour2, hour1, min32, min16, min8, min4, min2, min1, sec32, sec16, sec8, sec4, sec2, sec1};
-        showUhrBinary = new ShowUhrBinary(circles);
-*//*
-        stackPaneAnalog.getChildren().clear();
-        stackPaneAnalog.getChildren().addAll(clockCircle, minutesLine, hourLine, secondLine);*/
-        a = new ShowUhrAnalog(uhrForA, clockCircle, minutesLine, hourLine, secondLine, stackPaneAnalog);
+         a = new ShowUhrAnalog(uhrForA, clockCircle, minutesLine, hourLine, secondLine, stackPaneAnalog);
         Thread t1 = new Thread(new updateAnalog());
         t1.start();
     }
 
-
+    /**
+     * Automatische Aktualisierung der Aktuellen Zeit
+     */
     public class updateAnalog implements Runnable  {
 
         @Override

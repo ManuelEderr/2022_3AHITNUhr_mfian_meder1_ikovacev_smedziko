@@ -12,27 +12,16 @@ public class ShowUhrDigital implements ShowUhr{
     static Uhr uhr;
     Label digitalLabel;
 
+    /**
+     * beinhaltet Labels und die Uhr, die angezeigt wird
+     */
     public ShowUhrDigital(Uhr uhr, Label digitalTime, Label digitalLabel) {
         ShowUhrDigital.uhr = uhr;
         this.digitalLabel = digitalLabel;
     }
 
 
-    public static void main(String[] args) {
-//
-//        System.out.println();
-//
-        DateTimeFormatter dtf = DateTimeFormatter.ofPattern("HH:mm:ss");
-        System.out.println(dtf.format(LocalDateTime.now()));
-//
-//
-        DateTimeFormatter dtf2 = DateTimeFormatter.ofPattern("dd/MM/yyyy");
-        System.out.println(dtf2.format(LocalDateTime.now()));
-    }
-
-
     @Override
     public void showUhr() throws IOException {
-        //digitalLabel.setText();
     }
 }

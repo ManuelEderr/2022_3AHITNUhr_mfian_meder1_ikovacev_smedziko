@@ -1,14 +1,13 @@
 package View;
-
 import javafx.scene.control.Label;
 import javafx.scene.control.ProgressBar;
-import java.text.DecimalFormat;
 
 
 public class ShowTimer {
     private static final int Hours = 0;
     private static final int Minutes = 1;
     private static final int Seconds = 2;
+
 
 
     double maxLength;
@@ -20,7 +19,9 @@ public class ShowTimer {
         this.labels = labels;
         this.progressBars = progressBars;
     }
-
+    /**
+     * Zeit im Timer wird neu berechnet und angezeigt
+     */
     public void updateTime(double seconds) {
         double hours = seconds / 3600;
         double mins = (seconds % 3600) / 60;

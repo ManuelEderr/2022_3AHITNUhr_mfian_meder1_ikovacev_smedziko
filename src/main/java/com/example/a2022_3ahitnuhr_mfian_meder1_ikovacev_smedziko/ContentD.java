@@ -45,11 +45,17 @@ public class ContentD extends AnchorPane {
         }
     }
 
+    /**
+     *Eingegebene Stadt wird gesucht und mit einem getter gespeichert.
+     */
     public String getCity() {
         return city;
     }
 
     @FXML
+    /**
+     * Eingegebene Stadt wird eingelesen und die aktuelle Temperatur wird ausgegeben
+     */
     public void onButtonClickOk() throws IOException {
         city = cityTextField.getText();
         city.replaceAll("\\s*", "+");
