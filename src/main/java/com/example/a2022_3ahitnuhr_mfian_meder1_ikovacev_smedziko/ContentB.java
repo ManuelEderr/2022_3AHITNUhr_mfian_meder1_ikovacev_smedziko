@@ -11,10 +11,13 @@ import javafx.scene.layout.AnchorPane;
 import javafx.scene.shape.Circle;
 
 import java.io.IOException;
+import java.text.SimpleDateFormat;
 import java.time.DayOfWeek;
 import java.time.LocalDate;
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
+import java.util.Calendar;
+import java.util.Date;
 
 /**
  * Controller für Digitale Uhr
@@ -23,6 +26,8 @@ public class ContentB extends AnchorPane {
     Uhr uhr;
     long time;
     ShowUhrDigital showUhrDigital;
+    String inputDate= "20221224";
+    String inputFormat = "yyyyMMdd";
     /**
      * Labels für digitale Uhrzeit und digitales Datum
      */
@@ -31,6 +36,9 @@ public class ContentB extends AnchorPane {
 
     @FXML
     private Label digitalDate;
+
+    @FXML
+    private Label calendarWeek;
 
     /**
      * Die FXML-Datei wird im Controller geladen und ausgegeben.
@@ -50,7 +58,8 @@ public class ContentB extends AnchorPane {
         /**
          * Thread zum automatischen Aktualisieren der Uhrzeit
          * DateTimeFormatter = aktuelle Uhrzeit und Datum werden eingelesen
-         * 
+         * SimpleDateFormat = akutelle Kalenderwoche
+         *
          */
         Thread thread = new Thread(new Runnable() {
          @Override
@@ -62,6 +71,14 @@ public class ContentB extends AnchorPane {
                      digitalTime.setText(dtf.format(LocalDateTime.now()));
                      DateTimeFormatter dtf2 = DateTimeFormatter.ofPattern("dd / MMM / yyyy");
                      digitalDate.setText(dtf2.format(LocalDateTime.now()));
+
+                     SimpleDateFormat dateFormat = new SimpleDateFormat(inputFormat);
+                     Date date = new Date();
+
+                     Calendar calendar = Calendar.getInstance();
+                     calendar.setTime(date);
+                     int weekNumber = calendar.get(Calendar.WEEK_OF_YEAR);
+                     calendarWeek.setText("Kalenderwoche: " + weekNumber);
                  }
              };
              while (true){
