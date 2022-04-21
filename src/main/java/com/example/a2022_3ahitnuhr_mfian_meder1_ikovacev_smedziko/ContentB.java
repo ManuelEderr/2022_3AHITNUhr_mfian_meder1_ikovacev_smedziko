@@ -16,18 +16,25 @@ import java.time.LocalDate;
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 
+/**
+ * Controller für Digitale Uhr
+ */
 public class ContentB extends AnchorPane {
     Uhr uhr;
     long time;
     ShowUhrDigital showUhrDigital;
-
+    /**
+     * Labels für digitale Uhrzeit und digitales Datum
+     */
     @FXML
     private Label digitalTime;
 
     @FXML
     private Label digitalDate;
 
-
+    /**
+     * Die FXML-Datei wird im Controller geladen und ausgegeben.
+     */
     public ContentB(Uhr uhr) {
         FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("ContentB.fxml"));
 
@@ -40,7 +47,12 @@ public class ContentB extends AnchorPane {
             e.printStackTrace();
         }
 
-     Thread thread = new Thread(new Runnable() {
+        /**
+         * Thread zum automatischen Aktualisieren der Uhrzeit
+         * DateTimeFormatter = aktuelle Uhrzeit und Datum werden eingelesen
+         * 
+         */
+        Thread thread = new Thread(new Runnable() {
          @Override
          public void run() {
              Runnable updater = new Runnable() {

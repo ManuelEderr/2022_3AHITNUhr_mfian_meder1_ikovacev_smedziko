@@ -4,13 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bf76bf08-bf60-4e36-94d0-ca741ce9cdf2" name="Changes" comment="Added NewTime">
+    <list default="true" id="bf76bf08-bf60-4e36-94d0-ca741ce9cdf2" name="Changes" comment="ok">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/2022_3AHITNUhr_mfian_meder1_ikovacev_smedziko.iml" beforeDir="false" afterPath="$PROJECT_DIR$/2022_3AHITNUhr_mfian_meder1_ikovacev_smedziko.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/View/ShowTimer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/View/ShowTimer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/View/ShowUhrAnalog.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/View/ShowUhrAnalog.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/View/ShowUhrBinary.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/View/ShowUhrBinary.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/View/ShowUhrDigital.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/View/ShowUhrDigital.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/a2022_3ahitnuhr_mfian_meder1_ikovacev_smedziko/ContentA.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/a2022_3ahitnuhr_mfian_meder1_ikovacev_smedziko/ContentA.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/a2022_3ahitnuhr_mfian_meder1_ikovacev_smedziko/ContentB.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/a2022_3ahitnuhr_mfian_meder1_ikovacev_smedziko/ContentB.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/a2022_3ahitnuhr_mfian_meder1_ikovacev_smedziko/ContentC.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/a2022_3ahitnuhr_mfian_meder1_ikovacev_smedziko/ContentC.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/a2022_3ahitnuhr_mfian_meder1_ikovacev_smedziko/PrimaryController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/a2022_3ahitnuhr_mfian_meder1_ikovacev_smedziko/PrimaryController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/module-info.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/a2022_3ahitnuhr_mfian_meder1_ikovacev_smedziko/ContentD.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/a2022_3ahitnuhr_mfian_meder1_ikovacev_smedziko/ContentD.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -130,6 +133,7 @@
       <workItem from="1649591616678" duration="707000" />
       <workItem from="1649620524664" duration="889000" />
       <workItem from="1650212206928" duration="304000" />
+      <workItem from="1650521131694" duration="2119000" />
     </task>
     <task id="LOCAL-00001" summary="hello-view.fxml">
       <created>1647589998025</created>
@@ -223,10 +227,10 @@
     <MESSAGE value="Arbeitsberichte für jedes Teammitglied" />
     <MESSAGE value="hello-view.fxml, styleButtons.css" />
     <MESSAGE value="3 Scenes mit Switch Buttons" />
-    <MESSAGE value="ok" />
     <MESSAGE value="AllChanged" />
     <MESSAGE value="GSon" />
     <MESSAGE value="Added NewTime" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added NewTime" />
+    <MESSAGE value="ok" />
+    <option name="LAST_COMMIT_MESSAGE" value="ok" />
   </component>
 </project>

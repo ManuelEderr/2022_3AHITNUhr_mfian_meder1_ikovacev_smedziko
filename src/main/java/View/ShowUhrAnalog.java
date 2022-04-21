@@ -32,7 +32,9 @@ public class ShowUhrAnalog extends AnchorPane {
     int minute;
     int second;
 
-
+    /**
+     * Konstruktor für die einzelnen Zeiger der Uhr
+     */
     public ShowUhrAnalog(Uhr uhr, Circle c, Line minutesLine, Line hourLine, Line secondLine, StackPane sp) {
         this.uhr = uhr;
         this.clockCircle = c;
@@ -42,6 +44,10 @@ public class ShowUhrAnalog extends AnchorPane {
         this.sp = sp;
     }
 
+    /**
+     * Die Uhr wird angezeigt und die Position der Zeiger wird berechnet.
+     * @throws IOException
+     */
     public void showUhr() throws IOException {
 
         double clockRadius = Math.min(sp.getWidth(), sp.getHeight()) * 0.8 * 0.5;
@@ -56,7 +62,9 @@ public class ShowUhrAnalog extends AnchorPane {
         clockCircle.setFill(Color.WHITE);
         clockCircle.setStroke(Color.BLACK);
 
-        //Sekundenzeiger
+        /**
+         * Position des Sekundenzeigers wird berechnet
+         */
         double sLength = (clockRadius * 0.95);
         double xSecond = centerX + sLength * Math.sin(second * (2 * Math.PI / 60));
         double ySecond = centerY - sLength * Math.cos(second * (2 * Math.PI / 60));
@@ -64,7 +72,9 @@ public class ShowUhrAnalog extends AnchorPane {
         secondLine.setStroke(Color.BLACK);
         secondLine.setStrokeWidth(5);
 
-        //Minutenzeiger
+        /**
+         * Position des Minutenzeigers wird berechnet
+         */
         double mLength = clockRadius * 0.8;
         double xMinute = centerX + mLength * Math.sin(minute * (2 * Math.PI / 60));
         double yMinute = centerY - mLength * Math.cos(minute * (2 * Math.PI / 60));
@@ -74,7 +84,9 @@ public class ShowUhrAnalog extends AnchorPane {
 
         minutesLine.getCursor();
 
-        //Stundenzeiger
+        /**
+         * Position des Stundnezeigers wird berechnet
+         */
         double hLength = clockRadius * 0.5;
         double a = (hour % 12 + minute / 60.0) * (2 * Math.PI / 12);
         double xHour = centerX + hLength * Math.sin(a);
@@ -97,7 +109,10 @@ public class ShowUhrAnalog extends AnchorPane {
 
     }
 
-
+    /**
+     * Automatische Aktualisierung der analogen Uhrzeit
+     * @throws IOException
+     */
     public void upadte(Uhr uhr) throws IOException {
         this.uhr = uhr;
 

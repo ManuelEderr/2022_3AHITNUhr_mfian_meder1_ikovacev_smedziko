@@ -20,6 +20,9 @@ public class ShowTimer {
     this.progressBars=progressBars;
     }
 
+    /**
+     * Zeit im Timer wird neu berechnet und angezeigt
+     */
     public void updateTime(int seconds){
         hours=seconds/3600;
         mins=(seconds-hours*3600)/60;

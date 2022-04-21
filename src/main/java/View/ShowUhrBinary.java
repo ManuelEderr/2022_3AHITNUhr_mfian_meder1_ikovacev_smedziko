@@ -13,12 +13,19 @@ public class ShowUhrBinary implements ShowUhr {
     String oldTimeinBin;
     Circle[] circles;
 
+    /**
+     * Zeit wird gesetzt, es werden Kreise, die benutzt werden müssen zugeordnet.
+     * @param circlesToUse
+     */
     public ShowUhrBinary(Circle[] circlesToUse) {
         newTimeInBin = "";
         oldTimeinBin = "00000000000000000";
         circles = circlesToUse;
     }
 
+    /**
+     * Die aktuelle Uhrzeit wird in binärer Darstellung angezeigt.
+     */
     @Override
     public void showUhr() {
         for (int i = 0; i < 17; i++) {
@@ -36,6 +43,9 @@ public class ShowUhrBinary implements ShowUhr {
         oldTimeinBin = newTimeInBin;
     }
 
+    /**
+     *Automatische Aktualisierung der Binären Zeit
+     */
     public void upadte(long newTime) {
         Date date = new Date(newTime);
         Calendar calendar = GregorianCalendar.getInstance();
