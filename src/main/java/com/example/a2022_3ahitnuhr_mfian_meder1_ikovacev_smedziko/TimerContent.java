@@ -114,7 +114,7 @@ public class TimerContent extends AnchorPane {
                 }
             }
             System.out.println("Succesfully ended");
-            musicPlayer.playFile("com/example/a2022_3ahitnuhr_mfian_meder1_ikovacev_smedziko/HE.mp3");
+            musicPlayer.playFile("src/main/resources/com/example/a2022_3ahitnuhr_mfian_meder1_ikovacev_smedziko/HE.mp3S");
         }
     }
 }
